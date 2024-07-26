@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 Email Template Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- =================================================================== -->
+    <!-- TODO:  INTERNAL CSS STYLING FOR HTML EMAIL TEMPLATES - START  TODO: -->
+    <!-- =================================================================== -->
+    <style>
+      /* Define the styles for the Document and Body */
+      body {
+        margin: 0;
+        background-color: #d8dbdb;
+        padding: 20px;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 18px;
+        color: #565859;
+      }
+      /* Define the Styles for the Container / Wrapper */
+      /* max-width for email templates is 600px but using 700px for the practice */
+      .wrapper {
+        background-color: #f6faff;
+        max-width: 700px;
+        /* To center the wrapper */
+        margin: 0 auto;
+        box-shadow: 0 0 10px #616e79;
+        border-top: 10px solid #37a28f;
+        border-radius: 5px 5px 10px 10px;
+      }
+      /* Define the style for the Logo Container */
+      .logo {
+        text-align: center;
+        padding: 1% 0;
+      }
+      /* Define the styles for the image within the logo container */
+      .logo img {
+        max-width: 200px;
+      }
+      /* Define the styles for all images */
+      img {
+        max-width: 100%;
+      }
+      /* Define the styles for the 3 columns */
+      .three-columns {
+        width: 29.3%;
+        padding: 5% 2% 6%;
+        text-align: center;
+        float: left;
+        margin: 15px 0 32px;
+      }
+      .three-columns img {
+        max-width: 135px;
+      }
+      /* Define the styles for the H2 Tags */
+      h2 {
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 1px;
+        margin: 20px 0 8px;
+      }
+      /* Define the styles for the P Tags */
+      p {
+        line-height: 26px;
+        padding-bottom: 15px;
+      }
+      /* Define the styles for the Button (btn) */
+      .button {
+        background-color: #37a28f;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 14px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border-radius: 6px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.4s;
+      }
+      .button:hover {
+        background-color: #3db5a0;
+        color: #ffffff;
+      }
+      /* Define style for horizontal line */
+      hr.orange {
+        border: 1px solid #fe6b58;
+        width: 96%;
+        margin: 15px auto;
+      }
+      /* Define the styles for the 2 columns */
+      .two-columns {
+        float: left;
+        width: 46%;
+        padding: 5% 2%;
+        margin: 10px 0 26px;
+      }
+      .two-columns h2 {
+        margin: 0;
+      }
+      /* Define styles for Footer Section */
+      ul.social {
+        list-style-type: none;
+        text-align: center;
+        padding: 10px;
+        margin: 20px 0 5px;
+        width: 96%;
+      }
+      ul.social li {
+        display: inline;
+      }
+      .social img {
+        max-width: 40px;
+      }
+      .contact {
+        text-align: center;
+        color: #2b9684;
+        font-weight: 500;
+        line-height: 30px;
+        padding-bottom: 6%;
+      }
+      .contact a {
+        color: #2b9684;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+      .contact a:hover {
+        color: #fe6b58;
+      }
+      /* Adding Media Queries for Responsive Design to display better on Mobile devices */
+      @media (max-width: 600px) {
+        body {
+          padding: 5px;
+        }
+        .banner {
+          margin-bottom: 20px;
+        }
+        .three-columns,
+        .two-columns {
+          width: 96%;
+          margin: 0 0 30px;
+        }
+        .three-columns img {
+          max-width: 155px;
+        }
+        hr.orange {
+          margin-bottom: 30px;
+        }
+        .two-columns.second {
+          padding-left: 15px;
+          padding-bottom: 30px;
+        }
+      }
+    </style>
+    <!-- =================================================================== -->
+    <!-- TODO:  INTERNAL CSS STYLING FOR HTML EMAIL TEMPLATES - ENDS   TODO: -->
+    <!-- =================================================================== -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- START OF WRAPPER -->
+
+      <!-- LOGO SECTION -->
+
+      <div class="logo">
+        <a href="https://example.com" target="_blank"
+          ><img
+            src="https://i.ibb.co/JtckNqn/logo.png"
+            alt="HTML5 Logo"
+            title="HTML5 Logo"
+        /></a>
+      </div>
+
+      <!-- BANNER SECTION -->
+
+      <a href="https://example.com" target="_blank"
+        ><img
+          src="https://i.ibb.co/zQ558kP/banner.png"
+          alt="HTML5 Banner"
+          title="HTML5 Banner"
+          class="banner"
+      /></a>
+
+      <!-- THREE-COLUMN SECTION -->
+
+      <!-- Column 1 - Start -->
+      <div class="three-columns">
+        <a href="https://example.com" target="_blank"
+          ><img
+            src="https://i.ibb.co/tHQy3gL/mouse.png"
+            alt="Mouse Icon"
+            title="Mouse Icon"
+        /></a>
+        <h2>Email Development</h2>
+        <p>
+          There are many different email clients to consider when developing
+          your email template
+        </p>
+        <div class="button-holder">
+          <a href="https://example.com" target="_blank" class="button"
+            >Learn More</a
+          >
+        </div>
+      </div>
+      <!-- Column 1 - End -->
+
+      <!-- Column 2 - Start -->
+      <div class="three-columns">
+        <a href="https://example.com" target="_blank"
+          ><img
+            src="https://i.ibb.co/42MJn1V/phone.png"
+            alt="Phone Icon"
+            title="Phone Icon"
+        /></a>
+        <h2>Mobile Friendly</h2>
+        <p>
+          Most emails are opened on mobile devices today, so make sure your
+          design is mobile friendly
+        </p>
+        <div class="button-holder">
+          <a href="https://example.com" target="_blank" class="button"
+            >HTML Email</a
+          >
+        </div>
+        <!-- Column 2 - End -->
+      </div>
+      <!-- Column 3 - Start -->
+      <div class="three-columns">
+        <a href="https://example.com" target="_blank"
+          ><img
+            src="https://i.ibb.co/RD0sR6V/computer.png"
+            alt="Computer Icon"
+            title="Computer Icon"
+        /></a>
+        <h2>Desktop Clients</h2>
+        <p>
+          For desktop email clients like Outlook, we'll need to pay special
+          attention once we use tables
+        </p>
+        <div class="button-holder">
+          <a href="https://example.com" target="_blank" class="button"
+            >Development</a
+          >
+        </div>
+      </div>
+      <!-- Column 3 - End -->
+
+      <hr class="orange" />
+
+      <!-- TWO-COLUMN SECTION -->
+
+      <div class="two-columns">
+        <a href="https://example.com" target="_blank"
+          ><img
+            src="https://i.ibb.co/NKdYy92/pie-chart.png"
+            alt="Pie Chart Image"
+            title="Pie Chart Image"
+        /></a>
+      </div>
+
+      <div class="two-columns second">
+        <h2>Latest Email Design</h2>
+        <p>
+          There are a lot of email clients to consider when choosing a design
+          width but 600px is the most common
+        </p>
+        <div class="button-holder">
+          <a href="https://example.com" target="_blank" class="button"
+            >Email Design Course</a
+          >
+        </div>
+      </div>
+
+      <hr class="orange" />
+
+      <!-- FOOTER SECTION -->
+
+      <!-- SOCIAL MEDIA ICONS SECTION -->
+      <ul class="social">
+        <li>
+          <a href="https://example.com" target="_blank"
+            ><img
+              src="https://i.ibb.co/5cp6Gtb/facebook.png"
+              alt="Facebook"
+              title="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank"
+            ><img
+              src="https://i.ibb.co/m4PgXq6/twitter.png"
+              alt="Twitter"
+              title="Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank"
+            ><img
+              src="https://i.ibb.co/Ttf0YmH/youtube.png"
+              alt="YouTube"
+              title="YouTube"
+          /></a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank"
+            ><img
+              src="https://i.ibb.co/8brZJJt/instagram.png"
+              alt="Instagram"
+              title="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank"
+            ><img
+              src="https://i.ibb.co/3zn6mW3/linkedin.png"
+              alt="LinkedIn"
+              title="LinkedIn"
+          /></a>
+        </li>
+      </ul>
+
+      <!-- CONTACT SECTION -->
+
+      <p class="contact">
+        <a href="https://example.com" target="_blank">www.myportfolio.com</a
+        ><br />
+        <a href="tel:+18005555555">1-800-555-55555</a><br />
+        <a href="mailto:name@myportfolio.com">name@myportfolio.com</a><br />
+        2 Town Road - City - State 99999 <br />
+        <a href="https://example.com" target="_blank">Unsubscribe</a> |
+        <a href="https://example.com" target="_blank">Preferences</a><br />
+      </p>
+
+      <!-- END OF WRAPPER -->
+    </div>
+  </body>
+</html>
+
+<!-- https://w3newbie.imgbb.com/
+https://i.ibb.co/JtckNqn/logo.png
+https://i.ibb.co/zQ558kP/banner.png
+
+https://i.ibb.co/tHQy3gL/mouse.png
+https://i.ibb.co/42MJn1V/phone.png
+https://i.ibb.co/RD0sR6V/computer.png
+https://i.ibb.co/NKdYy92/pie-chart.png
+
+https://i.ibb.co/5cp6Gtb/facebook.png
+https://i.ibb.co/m4PgXq6/twitter.png
+https://i.ibb.co/Ttf0YmH/youtube.png
+https://i.ibb.co/8brZJJt/instagram.png
+https://i.ibb.co/3zn6mW3/linkedin.png
+-->
