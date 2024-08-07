@@ -3778,8 +3778,8 @@ nav .clientzonewrapper .advertising-drop {
   /* ------------------------------------------------ */
   /* FIXME:  COLOR SCHEME (THIS WEEK) FOR PROMOTIONS  */
   /* ------------------------------------------------ */
-  --color-scheme-weekly-promotions: #03989e;
-  --color-scheme-weekly-promotions-rgb: rgb(3, 152, 158);
+  --color-scheme-weekly-promotions: #8b3365;
+  --color-scheme-weekly-promotions-rgb: rgb(139, 51, 101);
   --color-scheme-weekly-text-color: white;
 }
 
@@ -3829,6 +3829,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-bottom: 3rem;
   background-color: #eee;
   text-align: center;
   /* border: 2px solid purple; */
@@ -3842,7 +3843,7 @@ nav .clientzonewrapper .advertising-drop {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   width: 100%;
   margin: -4rem 0rem 0rem 0rem;
@@ -3958,7 +3959,7 @@ nav .clientzonewrapper .advertising-drop {
 /* =============== */
 
 .individual__product__container__all__elements p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin: 1rem 0rem 0rem 0rem;
   text-align: center;
@@ -4003,8 +4004,8 @@ nav .clientzonewrapper .advertising-drop {
 
 .individual__product__image__container {
   position: relative;
-  width: 28rem;
-  height: 28rem;
+  width: 35rem;
+  height: 35rem;
   margin: 1rem 2rem 1rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1rem;
