@@ -180,7 +180,7 @@ header .logo .logo-image {
 
 header .logo-text {
   color: var(--color-00-main-white);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-decoration: none;
   padding: 0.5rem;
@@ -192,12 +192,10 @@ header .navigation {
 
 header .navigation .navigation-items a {
   position: relative;
-  color: var(--color-00-main-white);
-  /* font-size: 1.3rem; */
-  font-size: 1.5rem;
+  color: var(--color-00-main-white);  
+  font-size: 1.6rem;
   font-weight: 500;
-  text-decoration: none;
-  /* margin-left: 30px; */
+  text-decoration: none;  
   margin-left: 2rem;
   transition: 0.3s ease;
 }
