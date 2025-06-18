@@ -145,11 +145,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 200px;
+  /* padding: 15px 200px; */
+  padding: 1.5rem 10rem;
   transition: 0.5s ease;
+  /* border: 1px solid yellow; */
 }
 
 /* FIXME: */
+
+header .logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
 
 header .logo {
   position: relative;
@@ -158,26 +168,27 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid green; */
 }
 
 header .logo .logo-image {
-  /* display: block; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 5rem;
   object-fit: contain;
-  padding: 0.2rem;
+  padding: 0.5rem;
 }
 
 header .logo-text {
-  /* display: block; */
-  /* color: #000000; */
   color: #ffffff;
   font-size: 1.6rem;
   font-weight: 600;
-  /* text-transform: uppercase; */
   text-decoration: none;
-  margin: 0.5rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem;
+  /* border: 1px solid blue; */
 }
 
 /* FIXME: */
@@ -228,7 +239,8 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #2696e9;
+  /* background: #2696e9; */
+  background: var(--color-02-SageGreen);
 }
 
 .home:before {
@@ -293,7 +305,8 @@ section {
 }
 
 .slider-navigation .nav-btn.active {
-  background: #2696e9;
+  /* background: #2696e9; */
+  background: var(--color-02-SageGreen);
 }
 
 .slider-navigation .nav-btn:not(:last-child) {
@@ -379,6 +392,30 @@ section {
 /* MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF HEADER  */
 /* ===================================================== */
 
+/* @media (max-width: 1250px) {
+  header .navigation .navigation-items a {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  header .navigation .navigation-items a {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1120px) {
+  header .navigation .navigation-items a {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  header .navigation .navigation-items a {
+    margin-left: 8px;
+  }
+} */
+
 @media (max-width: 1040px) {
   header {
     padding: 12px 20px;
@@ -443,7 +480,7 @@ section {
   }
 
   .menu-btn {
-    background: url(images/Navigation/menu_hamburger.png) no-repeat;
+    background: url(../images/Navigation/menu_hamburger.png) no-repeat;
     background-size: 30px;
     background-position: center;
     width: 40px;
@@ -454,7 +491,7 @@ section {
 
   .menu-btn.active {
     z-index: 999;
-    background: url(images/Navigation/menu_close.png) no-repeat;
+    background: url(../images/Navigation/menu_close.png) no-repeat;
     background-size: 30px;
     background-position: center;
     transition: 0.3s ease;
