@@ -50,6 +50,18 @@ body {
   font-size: 1.6rem;
 }
 
+/* REMOVE BULLET POINTS FROM ALL LIST ITEMS */
+
+li {
+  list-style: none;
+}
+
+/* REMOVE "UNDERLINES" FROM ALL ANCHORS */
+
+a {
+  text-decoration: none;
+}
+
 /* ============================================================== */
 /* STYLES FOR HEADING ELEMENTS - SMALLER SCREENS / MOBILE DEVICES */
 /* ============================================================== */
@@ -134,9 +146,9 @@ h6 {
   }
 }
 
-/* ======================== */
-/* STYLING - NAVIGATION BAR */
-/* ======================== */
+/* ================================= */
+/* STYLING - HEADER & NAVIGATION BAR */
+/* ================================= */
 
 header {
   z-index: 999;
@@ -192,10 +204,10 @@ header .navigation {
 
 header .navigation .navigation-items a {
   position: relative;
-  color: var(--color-00-main-white);  
+  color: var(--color-00-main-white);
   font-size: 1.6rem;
   font-weight: 500;
-  text-decoration: none;  
+  text-decoration: none;
   margin-left: 2rem;
   transition: 0.3s ease;
 }
@@ -549,3 +561,875 @@ section {
     line-height: 1.1rem;
   }
 }
+
+/* ======================= */
+/* CATEGORY 01 - WOMEN     */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 02 - MEN       */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 03 - KIDS      */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 04 - COMBOS    */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 05 - GIFTS     */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 06 - GEAR      */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 07 - TECH      */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 08 - RESELLERS */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 09 - CONTACT   */
+/* ======================= */
+
+/* ======================= */
+/* CLIENT TESTIMONIALS     */
+/* ======================= */
+
+/* ======================= */
+/* FOOTER                  */
+/* ======================= */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                    SECTION - FOOTER (START)                                     TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ================================================ */
+  /* FIXME:  COLOR SCHEME - FOOTER                    */
+  /* ================================================ */
+
+  --color-footer-section-background: #ffffff;
+  --color-footer-section-text-main-title: #065bb3;
+  --color-footer-section-text-profile-description: #000000;
+  --color-footer-section-text-profile-description-tagline: #000000;
+  --color-footer-section-social-media-icons: #ffffff;
+  --color-footer-section-social-media-icons-hover: #ffffff;
+  --color-footer-section-social-media-icons-background: #ffffff;
+  --color-footer-section-column-group-header: #0b1128;
+  --color-footer-section-column-group-list_items: #000000;
+  --color-footer-section-column-group-list_items-hover: #065bb3;
+  --color-footer-section-column-group-list_items-strong: #065bb3;
+  --color-footer-section-column-group-list_items-strong-hover: #0b1128;
+  --color-footer-section-horisontal-line: #d3d3d3;
+  --color-footer-section-contact-numbers-text: #000000;
+  --color-footer-section-copyright-text: #0b1128;
+  --color-footer-section-policies-text: #065bb3;
+  --color-footer-section-policies-text-hover: #0b1128;
+}
+
+/* HORIZONTAL ROW */
+
+hr {
+  height: 0.1rem;
+  border: none;
+  background-color: var(--color-footer-section-horisontal-line);
+  margin: 1rem 0rem 1.5rem 0rem;
+}
+
+.horizontal__row__height {
+  height: 0.1rem;
+  border: none;
+  background-color: #ffffff;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* ================================== */
+/* FOOTER - STYLING OF MAIN CONTAINER */
+/* ================================== */
+
+.footer__section__main__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF FOOTER MAIN CONTAINER  */
+
+@media screen and (max-width: 830px) {
+  .footer__section__main__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer__section__main__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer__section__main__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ====================== */
+/* FOOTER - BASIC STYLING */
+/* ====================== */
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-04-WinterPine);
+  box-shadow: var(--color-box-shadow-01);
+  transition: background 0.3s linear;
+}
+
+/* ========================== */
+/* FOOTER - SECTION CONTAINER */
+/* ========================== */
+
+.footer__section__container {
+  max-width: 124rem;
+  padding: 2rem 4rem 3rem 4rem;
+  margin: auto;
+}
+
+/* ----------------------------- */
+/* FOOTER - PAGE TITLE CONTAINER */
+/* ----------------------------- */
+
+.footer__page__title__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+/* ------------------- */
+/* FOOTER - PAGE TITLE */
+/* ------------------- */
+
+.footer__page__title h5 {
+  display: flex;
+  color: var(--color-00-main-white);
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  /* text-transform: uppercase; */
+  width: 100%;
+  padding: 0rem 1rem 0rem 1rem;
+  text-align: center;
+}
+
+/* -------------------------- */
+/* FOOTER - CONTENT CONTAINER */
+/* -------------------------- */
+
+.footer__content__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+/* ---------------------------------- */
+/* FOOTER - COMPANY PROFILE CONTAINER */
+/* ---------------------------------- */
+
+.footer__company__profile__container {
+  margin: 0rem 1rem 1rem 0.5rem;
+}
+
+/* --------------------- */
+/* FOOTER - COMPANY LOGO */
+/* --------------------- */
+
+.footer__company__profile__container .footer__company__profile__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.footer__company__profile__container img {
+  width: 30rem;
+  height: auto;
+}
+
+/* ---------------------------- */
+/* FOOTER - COMPANY DESCRIPTION */
+/* ---------------------------- */
+
+.footer__company__profile__description {
+  max-width: 30rem;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.3rem;
+  margin: 3rem 1rem 3rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.footer__company__profile__description p {
+  color: var(--color-01-TimberWolf);
+  /* color: var(--color-00-main-white); */
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+/* ----------------------------- */
+/* FOOTER - COMPANY SOCIAL MEDIA */
+/* ----------------------------- */
+
+/* SOCIAL MEDIA CONTAINER  */
+
+.footer__company__profile__social__media__container {
+  position: relative;
+  max-width: 30rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+}
+
+/* SOCIAL MEDIA LINKS */
+
+.footer__profile__social__media__links ul {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.footer__profile__social__media__links ul li {
+  list-style: none;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.footer__profile__social__media__links ul li .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  line-height: 2rem;
+  transition: 0.6s;
+  color: var(--color-01-TimberWolf);
+}
+
+.footer__profile__social__media__links ul li .fab:hover {
+  color: var(--color-00-main-white);
+}
+
+.footer__profile__social__media__links ul li a {
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-03-HippieGreen);
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+.footer__profile__social__media__links ul li a:hover {
+  transform: translate(0, -0.4rem);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - FACEBOOK */
+
+.footer__profile__social__media__links ul li:nth-child(1) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - INSTAGRAM */
+
+.footer__profile__social__media__links ul li:nth-child(2) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - TWITTER / X */
+
+.footer__profile__social__media__links ul li:nth-child(3) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - TIKTOK */
+
+.footer__profile__social__media__links ul li:nth-child(4) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - YOUTUBE */
+
+.footer__profile__social__media__links ul li:nth-child(5) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - FOOTER - COLUMNS                                                                                      */
+/* ===================================================================================================================== */
+
+/* ======================================== */
+/* FIXME:  CONTAINER - HOLDING ALL COLUMNS  */
+/* ======================================== */
+
+.footer__column__container__all {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+.footer__column__container__all ul li {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.footer__column__group__header {
+  margin: 0rem 3rem 0rem 8rem;
+}
+
+li.footer__column__group__name {
+  color: var(--color-footer-section-column-group-header);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer__column__group__header li {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.footer__column__group__header li a {
+  color: var(--color-footer-section-column-group-list_items);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 0.9rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.footer__column__group__header li a:hover {
+  color: var(--color-footer-section-column-group-list_items-hover);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer__column__group__item {
+  color: var(--color-footer-section-column-group-list_items);
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* border: 1px solid pink; */
+}
+
+.request__call__back strong {
+  color: var(--color-footer-section-column-group-list_items-strong);
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.request__call__back strong:hover {
+  color: var(--color-footer-section-column-group-list_items-strong-hover);
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.online__application strong {
+  color: var(--color-footer-section-column-group-list_items-strong);
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.online__application strong:hover {
+  color: var(--color-footer-section-column-group-list_items-strong-hover);
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* ============================================================== */
+/* SECTION - CONTACT DETAILS - TELEPHONE / FAX / WHATSAPP / EMAIL */
+/* ============================================================== */
+
+.footer__column__group__telephone,
+.footer__column__group__fax,
+.footer__column__group__whatsapp,
+.footer__column__group__email {
+  display: flex;
+  justify-content: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-footer-section-contact-numbers-text);
+}
+
+.footer__column__group__telephone img,
+.footer__column__group__fax img,
+.footer__column__group__whatsapp img,
+.footer__column__group__email img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.footer__column__group__email a,
+.footer__column__group__whatsapp a {
+  text-decoration: none;
+  color: var(--color-footer-section-contact-numbers-text);
+}
+
+/* ============================================ */
+/* SECTION - COPYRIGHT / PAIA / POPI / PRIVACY  */
+/* ============================================ */
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-weight: 600;
+}
+
+.copy__right {
+  margin: 0rem 0rem 0rem 0.5rem;
+  color: var(--color-footer-section-copyright-text);
+  display: flex;
+  align-items: center;
+}
+
+.copy__right span {
+  margin: 0rem 0rem 0rem 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.footer__bottom__policies a {
+  color: var(--color-footer-section-policies-text);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0rem 0.5rem 0rem 2rem;
+}
+
+.footer__bottom__policies a:hover {
+  color: var(--color-footer-section-policies-text-hover);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - RESPONSIVE DESIGN (MEDIA QUERIES)                                                                     */
+/* ===================================================================================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1250 px  */
+/* ============================= */
+
+@media screen and (max-width: 1250px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 8rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1210 px  */
+/* ============================= */
+
+@media screen and (max-width: 1210px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1200 px  */
+/* ============================= */
+
+@media screen and (max-width: 1200px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 4rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1167 px  */
+/* ============================= */
+
+@media screen and (max-width: 1167px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 2.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1060 px  */
+/* ============================= */
+
+@media screen and (max-width: 1060px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 1.75rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1030 px  */
+/* ============================= */
+
+@media screen and (max-width: 1030px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 0.75rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .footer__column__group__header {
+    margin: 0rem 2.75rem 0rem 0rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  970 px   */
+/* ============================= */
+
+@media screen and (max-width: 970px) {
+  .footer__column__group__header {
+    margin: 0rem 2.75rem 0rem 0rem;
+  }
+
+  .footer__company__profile__description {
+    font-size: 1.1rem;
+  }
+
+  li.footer__column__group__name {
+    font-size: 1.2rem;
+  }
+
+  .footer__column__group__item {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__header li a {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__email p,
+  .footer__column__group__telephone p,
+  .footer__column__group__fax p,
+  .footer__column__group__whatsapp p {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__telephone img,
+  .footer__column__group__fax img,
+  .footer__column__group__whatsapp img,
+  .footer__column__group__email img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .request__call__back strong,
+  .online__application strong {
+    font-size: 1.2rem;
+  }
+
+  .request__call__back strong:hover,
+  .online__application strong:hover {
+    font-size: 1.2rem;
+  }
+
+  .copy__right span,
+  .footer__bottom__policies a {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  910 px   */
+/* ============================= */
+
+@media screen and (max-width: 910px) {
+  .footer__company__profile__container img {
+    width: 25rem;
+  }
+
+  .footer__company__profile__description {
+    max-width: 25rem;
+  }
+
+  .footer__company__profile__social__media__container {
+    max-width: 25rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  855 px   */
+/* ============================= */
+
+@media screen and (max-width: 855px) {
+  .footer__column__group__header {
+    margin: 0rem 2.75rem 0rem 0rem;
+  }
+
+  .footer__company__profile__description {
+    font-size: 1rem;
+  }
+
+  li.footer__column__group__name {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__item {
+    font-size: 1rem;
+  }
+
+  .footer__column__group__header li a {
+    font-size: 1rem;
+  }
+
+  .footer__column__group__email p,
+  .footer__column__group__telephone p,
+  .footer__column__group__fax p,
+  .footer__column__group__whatsapp p {
+    font-size: 1rem;
+  }
+
+  .footer__column__group__telephone img,
+  .footer__column__group__fax img,
+  .footer__column__group__whatsapp img,
+  .footer__column__group__email img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .request__call__back strong,
+  .online__application strong {
+    font-size: 1.1rem;
+  }
+
+  .request__call__back strong:hover,
+  .online__application strong:hover {
+    font-size: 1.1rem;
+  }
+
+  .copy__right span,
+  .footer__bottom__policies a {
+    font-size: 1.1rem;
+  }
+
+  .footer__bottom__policies a {
+    margin: 0rem 0.5rem 0rem 1.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  822 px   */
+/* ============================= */
+
+/* FIXME: SPLIT INTO 1 COLUMN  */
+
+@media screen and (max-width: 822px) {
+  footer {
+    position: relative;
+  }
+
+  .footer__content__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__column__container__all {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .footer__column__container__all .footer__column__content {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    gap: 2rem;
+  }
+
+  .footer__column__content .footer__column__group__number {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .footer__company__profile__container .footer__company__profile__logo {
+    justify-content: center;
+  }
+
+  .footer__company__profile__description {
+    font-size: 1rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+  }
+
+  .footer__company__profile__social__media__container {
+    margin-bottom: 2rem;
+  }
+
+  .footer__column__container__all {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .footer__column__group__header {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .footer__column__group__number {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__column__group__email,
+  .footer__column__group__telephone,
+  .footer__column__group__fax,
+  .footer__column__group__whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .footer__bottom__policies a {
+    margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  415 px   */
+/* ============================= */
+
+@media screen and (max-width: 415px) {
+  .footer__column__container__all {
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    flex: wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__column__container__all .footer__column__content {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__column__content .footer__column__group__number {
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  370 px   */
+/* ============================= */
+
+@media screen and (max-width: 370px) {
+  .footer__company__profile__description {
+    margin: 1rem 0.5rem 2rem 0.5rem;
+    max-width: 30rem;
+    height: 8rem;
+  }
+
+  .footer__profile__social__media__links ul li {
+    margin: 0rem 0.4rem 0rem 0.4rem;
+  }
+
+  .footer__company__profile__container img {
+    width: 21rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  /* .footer__company__profile__description {
+    max-width: 15rem;
+  } */
+
+  .footer__company__profile__description p {
+    width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__company__profile__social__media__container {
+    max-width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__content__container {
+    max-width: 100%;
+  }
+
+  .footer__company__profile__container {
+    width: 22rem;
+    margin: 0rem 0rem 0rem -2rem;
+  }
+
+  .footer__column__container__all {
+    /* border: 1px solid blue; */
+    margin: 1.5rem 0rem 0rem -2rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                                   SECTION - FOOTER (END)                                    FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
