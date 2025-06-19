@@ -394,6 +394,12 @@ section {
 /* MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF HEADER  */
 /* ===================================================== */
 
+@media (max-width: 1070px) {
+  header .logo-text {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 1040px) {
   header {
     padding: 1.2rem 2rem;
@@ -982,9 +988,9 @@ li.footer__column__group__name {
   color: var(--color-01-TimberWolf);
 }
 
-/* ============================================ */
-/* SECTION - COPYRIGHT / PAIA / POPI / PRIVACY  */
-/* ============================================ */
+/* ==================================================== */
+/* FOOTER - BOTTOM - COPYRIGHT / PAIA / POPI / PRIVACY  */
+/* ==================================================== */
 
 .footer__bottom {
   display: flex;
@@ -998,7 +1004,7 @@ li.footer__column__group__name {
 
 .copy__right {
   margin: 0rem 0rem 0rem 0.5rem;
-  color: var(--color-footer-section-copyright-text);
+  color: var(--color-00-main-white);
   display: flex;
   align-items: center;
 }
@@ -1011,14 +1017,14 @@ li.footer__column__group__name {
 }
 
 .footer__bottom__policies a {
-  color: var(--color-footer-section-policies-text);
+  color: var(--color-00-main-white);
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0rem 0.5rem 0rem 2rem;
 }
 
 .footer__bottom__policies a:hover {
-  color: var(--color-footer-section-policies-text-hover);
+  color: var(--color-02-SageGreen);
 }
 
 /* ===================================================================================================================== */
