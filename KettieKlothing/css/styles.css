@@ -606,12 +606,6 @@ section {
 /* FOOTER                  */
 /* ======================= */
 
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-/* TODO:TODO:                                    SECTION - FOOTER (START)                                     TODO:TODO: */
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-
 :root {
   /* ================================================ */
   /* FIXME:  COLOR SCHEME - FOOTER                    */
@@ -700,7 +694,7 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: var(--color-04-WinterPine);
+  background-color: var(--color-05-BrunswickGreen);
   box-shadow: var(--color-box-shadow-01);
   transition: background 0.3s linear;
 }
@@ -899,30 +893,29 @@ footer {
   background-color: var(--color-00-main-black);
 }
 
-/* ===================================================================================================================== */
-/* TODO:  PART 5 - FOOTER - COLUMNS                                                                                      */
-/* ===================================================================================================================== */
+/* ---------------------- */
+/* FOOTER - SITEMAP LINKS */
+/* ---------------------- */
 
-/* ======================================== */
-/* FIXME:  CONTAINER - HOLDING ALL COLUMNS  */
-/* ======================================== */
+/* SITEMAP - ALL COLUMNS CONTAINER */
 
 .footer__column__container__all {
   display: flex;
   flex-wrap: wrap;
-  /* border: 1px solid black; */
 }
 
 .footer__column__container__all ul li {
   margin: 0rem 0rem 0rem 0rem;
 }
 
+/* SITEMAP - COLUMN HEADERS & LINKS (GENERAL STYLING) */
+
 .footer__column__group__header {
   margin: 0rem 3rem 0rem 8rem;
 }
 
 li.footer__column__group__name {
-  color: var(--color-footer-section-column-group-header);
+  color: var(--color-00-main-white);
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 600;
@@ -933,58 +926,35 @@ li.footer__column__group__name {
 }
 
 .footer__column__group__header li a {
-  color: var(--color-footer-section-column-group-list_items);
+  color: var(--color-01-TimberWolf);
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 0.9rem;
   padding: 0rem 0rem 0rem 0rem;
 }
 
+.footer__column__group__header li.footer__column__group__name a {
+  color: var(--color-00-main-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 0.9rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
 .footer__column__group__header li a:hover {
-  color: var(--color-footer-section-column-group-list_items-hover);
+  color: var(--color-02-SageGreen);
   font-weight: 600;
   cursor: pointer;
 }
 
 .footer__column__group__item {
-  color: var(--color-footer-section-column-group-list_items);
+  color: var(--color-01-TimberWolf);
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 500;
-  /* border: 1px solid pink; */
 }
 
-.request__call__back strong {
-  color: var(--color-footer-section-column-group-list_items-strong);
-  text-transform: none;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.request__call__back strong:hover {
-  color: var(--color-footer-section-column-group-list_items-strong-hover);
-  text-transform: none;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.online__application strong {
-  color: var(--color-footer-section-column-group-list_items-strong);
-  text-transform: none;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.online__application strong:hover {
-  color: var(--color-footer-section-column-group-list_items-strong-hover);
-  text-transform: none;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-/* ============================================================== */
-/* SECTION - CONTACT DETAILS - TELEPHONE / FAX / WHATSAPP / EMAIL */
-/* ============================================================== */
+/* SITEMAP - COLUMN 1 - STYLING - FAX, EMAIL, WHATSAPP */
 
 .footer__column__group__telephone,
 .footer__column__group__fax,
@@ -995,7 +965,7 @@ li.footer__column__group__name {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
-  color: var(--color-footer-section-contact-numbers-text);
+  color: var(--color-01-TimberWolf);
 }
 
 .footer__column__group__telephone img,
@@ -1009,7 +979,7 @@ li.footer__column__group__name {
 .footer__column__group__email a,
 .footer__column__group__whatsapp a {
   text-decoration: none;
-  color: var(--color-footer-section-contact-numbers-text);
+  color: var(--color-01-TimberWolf);
 }
 
 /* ============================================ */
