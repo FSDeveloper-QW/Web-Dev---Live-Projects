@@ -31,6 +31,10 @@
   --color-YouTube: #ff0000;
   --color-WhatsApp: #25d366;
   --color-Telegram: #0088cc;
+  /* ------ */
+  /* FOOTER */
+  /* ------ */
+  --color-footer-section-horisontal-line: #d3d3d3;
 }
 
 * {
@@ -249,7 +253,7 @@ section {
   z-index: 777;
   content: "";
   position: absolute;
-  background: rgba(3, 96, 251, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
   top: 0;
@@ -612,30 +616,6 @@ section {
 /* FOOTER                  */
 /* ======================= */
 
-:root {
-  /* ================================================ */
-  /* FIXME:  COLOR SCHEME - FOOTER                    */
-  /* ================================================ */
-
-  --color-footer-section-background: #ffffff;
-  --color-footer-section-text-main-title: #065bb3;
-  --color-footer-section-text-profile-description: #000000;
-  --color-footer-section-text-profile-description-tagline: #000000;
-  --color-footer-section-social-media-icons: #ffffff;
-  --color-footer-section-social-media-icons-hover: #ffffff;
-  --color-footer-section-social-media-icons-background: #ffffff;
-  --color-footer-section-column-group-header: #0b1128;
-  --color-footer-section-column-group-list_items: #000000;
-  --color-footer-section-column-group-list_items-hover: #065bb3;
-  --color-footer-section-column-group-list_items-strong: #065bb3;
-  --color-footer-section-column-group-list_items-strong-hover: #0b1128;
-  --color-footer-section-horisontal-line: #d3d3d3;
-  --color-footer-section-contact-numbers-text: #000000;
-  --color-footer-section-copyright-text: #0b1128;
-  --color-footer-section-policies-text: #065bb3;
-  --color-footer-section-policies-text-hover: #0b1128;
-}
-
 /* HORIZONTAL ROW */
 
 hr {
@@ -648,7 +628,7 @@ hr {
 .horizontal__row__height {
   height: 0.1rem;
   border: none;
-  background-color: #ffffff;
+  background-color: var(--color-00-main-white);
   margin: 0rem 0rem 0rem 0rem;
 }
 
@@ -790,12 +770,10 @@ footer {
   text-align: justify;
   font-size: 1.3rem;
   margin: 3rem 1rem 3rem 1rem;
-  /* border: 1px solid green; */
 }
 
 .footer__company__profile__description p {
   color: var(--color-01-TimberWolf);
-  /* color: var(--color-00-main-white); */
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 2rem;
@@ -912,6 +890,7 @@ footer {
 
 .footer__column__container__all ul li {
   margin: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
 }
 
 /* SITEMAP - COLUMN HEADERS & LINKS (GENERAL STYLING) */
@@ -962,7 +941,6 @@ li.footer__column__group__name {
 
 /* SITEMAP - COLUMN 1 - STYLING - FAX, EMAIL, WHATSAPP */
 
-.footer__column__group__telephone,
 .footer__column__group__fax,
 .footer__column__group__whatsapp,
 .footer__column__group__email {
@@ -974,7 +952,6 @@ li.footer__column__group__name {
   color: var(--color-01-TimberWolf);
 }
 
-.footer__column__group__telephone img,
 .footer__column__group__fax img,
 .footer__column__group__whatsapp img,
 .footer__column__group__email img {
@@ -1027,90 +1004,162 @@ li.footer__column__group__name {
   color: var(--color-02-SageGreen);
 }
 
-/* ===================================================================================================================== */
-/* TODO:  PART 6 - RESPONSIVE DESIGN (MEDIA QUERIES)                                                                     */
-/* ===================================================================================================================== */
+/* ============================================================= */
+/* FOOTER : MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF FOOTER */
+/* ============================================================= */
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  1250 px  */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  1920px */
+/* =================== */
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1920px) {
   .footer__column__group__header {
     margin: 0rem 3rem 0rem 8rem;
   }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 8rem;
+  }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  1210 px  */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  1500px */
+/* =================== */
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1500px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 8rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  1300px */
+/* =================== */
+
+@media screen and (max-width: 1300px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 8rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1250 px */
+/* ==================== */
+
+@media screen and (max-width: 1250px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 6rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1200 px */
+/* ==================== */
+
+@media screen and (max-width: 1200px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 5.25rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1165 px */
+/* ==================== */
+
+@media screen and (max-width: 1165px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 7rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 4rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1130 px */
+/* ==================== */
+
+@media screen and (max-width: 1130px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 6rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 3rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1110 px */
+/* ==================== */
+
+@media screen and (max-width: 1110px) {
   .footer__column__group__header {
     margin: 0rem 3rem 0rem 5rem;
   }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 2.5rem;
+  }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  1200 px  */
-/* ============================= */
+/* ==================== */
+/* BREAKPOINT:  1085 px */
+/* ==================== */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1085px) {
   .footer__column__group__header {
     margin: 0rem 3rem 0rem 4rem;
   }
-}
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  1167 px  */
-/* ============================= */
-
-@media screen and (max-width: 1167px) {
-  .footer__column__group__header {
-    margin: 0rem 3rem 0rem 2.5rem;
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 2rem;
   }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  1060 px  */
-/* ============================= */
+/* ==================== */
+/* BREAKPOINT:  1070 px */
+/* ==================== */
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1070px) {
   .footer__column__group__header {
-    margin: 0rem 3rem 0rem 1.75rem;
+    margin: 0rem 3rem 0rem 3rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 1rem;
   }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  1030 px  */
-/* ============================= */
+/* ==================== */
+/* BREAKPOINT:  1040 px */
+/* ==================== */
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1040px) {
   .footer__column__group__header {
-    margin: 0rem 3rem 0rem 0.75rem;
+    margin: 0rem 3rem 0rem 2rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 0rem 0rem 0rem;
   }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  1000 px  */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  980 px */
+/* =================== */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
   .footer__column__group__header {
-    margin: 0rem 2.75rem 0rem 0rem;
-  }
-}
-
-/* ============================= */
-/* FIXME:  BREAKPOINT:  970 px   */
-/* ============================= */
-
-@media screen and (max-width: 970px) {
-  .footer__column__group__header {
-    margin: 0rem 2.75rem 0rem 0rem;
+    margin: 0rem 2.75rem 0rem 3.5rem;
   }
 
-  .footer__company__profile__description {
+  .footer__company__profile__container img {
+    width: 25rem;
+  }
+
+  .footer__company__profile__description p {
     font-size: 1.1rem;
   }
 
@@ -1126,42 +1175,68 @@ li.footer__column__group__name {
     font-size: 1.1rem;
   }
 
+  .footer__column__group__header li a.combos__header {
+    font-size: 1.2rem;
+  }
+
+  .footer__column__group__header li a.gifts__header {
+    font-size: 1.2rem;
+  }
+
   .footer__column__group__email p,
-  .footer__column__group__telephone p,
   .footer__column__group__fax p,
   .footer__column__group__whatsapp p {
     font-size: 1.1rem;
   }
 
-  .footer__column__group__telephone img,
   .footer__column__group__fax img,
   .footer__column__group__whatsapp img,
   .footer__column__group__email img {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .request__call__back strong,
-  .online__application strong {
-    font-size: 1.2rem;
-  }
-
-  .request__call__back strong:hover,
-  .online__application strong:hover {
-    font-size: 1.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
   }
 
   .copy__right span,
   .footer__bottom__policies a {
     font-size: 1.2rem;
   }
+
+  .footer__profile__social__media__links ul li .fab {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .footer__profile__social__media__links ul li a {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  910 px   */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  965 px */
+/* =================== */
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 965px) {
+  .footer__column__group__header {
+    margin: 0rem 2.5rem 0rem 3rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  940 px */
+/* =================== */
+
+@media screen and (max-width: 9405px) {
+  .footer__column__group__header {
+    margin: 0rem 2rem 0rem 2.5rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  915 px */
+/* =================== */
+
+@media screen and (max-width: 915px) {
   .footer__company__profile__container img {
     width: 25rem;
   }
@@ -1170,21 +1245,25 @@ li.footer__column__group__name {
     max-width: 25rem;
   }
 
+  .footer__company__profile__description p {
+    line-height: 1.6rem;
+  }
+
   .footer__company__profile__social__media__container {
     max-width: 25rem;
   }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  855 px   */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  865 px */
+/* =================== */
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 865px) {
   .footer__column__group__header {
-    margin: 0rem 2.75rem 0rem 0rem;
+    margin: 0rem 2rem 0rem 2.5rem;
   }
 
-  .footer__company__profile__description {
+  .footer__company__profile__description p {
     font-size: 1rem;
   }
 
@@ -1200,29 +1279,35 @@ li.footer__column__group__name {
     font-size: 1rem;
   }
 
+  .footer__column__group__header li a.combos__header {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__header li a.gifts__header {
+    font-size: 1.1rem;
+  }
+
   .footer__column__group__email p,
-  .footer__column__group__telephone p,
   .footer__column__group__fax p,
   .footer__column__group__whatsapp p {
     font-size: 1rem;
   }
 
-  .footer__column__group__telephone img,
   .footer__column__group__fax img,
   .footer__column__group__whatsapp img,
   .footer__column__group__email img {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 
-  .request__call__back strong,
-  .online__application strong {
-    font-size: 1.1rem;
+  .footer__profile__social__media__links ul li .fab {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
   }
 
-  .request__call__back strong:hover,
-  .online__application strong:hover {
-    font-size: 1.1rem;
+  .footer__profile__social__media__links ul li a {
+    width: 3rem;
+    height: 3rem;
   }
 
   .copy__right span,
@@ -1235,13 +1320,13 @@ li.footer__column__group__name {
   }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  822 px   */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  835 px */
+/* =================== */
 
-/* FIXME: SPLIT INTO 1 COLUMN  */
+/* SPLIT INTO 1 COLUMN  */
 
-@media screen and (max-width: 822px) {
+@media screen and (max-width: 835px) {
   footer {
     position: relative;
   }
@@ -1294,7 +1379,7 @@ li.footer__column__group__name {
 
   .footer__company__profile__description {
     font-size: 1rem;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 3rem 0.5rem 3rem 0.5rem;
   }
 
   .footer__company__profile__social__media__container {
@@ -1317,7 +1402,6 @@ li.footer__column__group__name {
   }
 
   .footer__column__group__email,
-  .footer__column__group__telephone,
   .footer__column__group__fax,
   .footer__column__group__whatsapp {
     display: flex;
@@ -1332,9 +1416,9 @@ li.footer__column__group__name {
   }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  415 px   */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  415 px */
+/* =================== */
 
 @media screen and (max-width: 415px) {
   .footer__column__container__all {
@@ -1355,9 +1439,9 @@ li.footer__column__group__name {
   }
 }
 
-/* ============================= */
-/* FIXME:  BREAKPOINT:  370 px   */
-/* ============================= */
+/* =================== */
+/* BREAKPOINT:  370 px */
+/* =================== */
 
 @media screen and (max-width: 370px) {
   .footer__company__profile__description {
@@ -1374,10 +1458,6 @@ li.footer__column__group__name {
     width: 21rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
   }
-
-  /* .footer__company__profile__description {
-    max-width: 15rem;
-  } */
 
   .footer__company__profile__description p {
     width: 100%;
@@ -1399,13 +1479,6 @@ li.footer__column__group__name {
   }
 
   .footer__column__container__all {
-    /* border: 1px solid blue; */
     margin: 1.5rem 0rem 0rem -2rem;
   }
 }
-
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-/* FIXME:FIXME:                                   SECTION - FOOTER (END)                                    FIXME:FIXME: */
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
