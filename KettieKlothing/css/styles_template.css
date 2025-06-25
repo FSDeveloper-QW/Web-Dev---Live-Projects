@@ -1,0 +1,1491 @@
+:root {
+  /* ------------------ */
+  /* MAIN COLOR SCHEMES */
+  /* ------------------ */
+  --color-00-main-white: #ffffff;
+  --color-00-main-black: #000000;
+  --color-01-TimberWolf: #dad7cd;
+  --color-02-SageGreen: #a3b18a;
+  --color-03-HippieGreen: #588157;
+  --color-04-WinterPine: #3a5a40;
+  --color-05-BrunswickGreen: #344e41;
+  /* --------------- */
+  /* PAGE BACKGROUND */
+  /* --------------- */
+  --color-page-background: #a9a9a9;
+  /* ----------- */
+  /* BOX SHADOWS */
+  /* ----------- */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  /* -------------------------- */
+  /* SOCIAL MEDIA COLOR SCHEMES */
+  /* -------------------------- */
+  --color-Facebook: #3b5998;
+  --color-Instagram: #c32aa3;
+  --color-LinkedIn: #0077b5;
+  --color-X: #000000;
+  --color-TikTok: #ffffff;
+  --color-YouTube: #ff0000;
+  --color-WhatsApp: #25d366;
+  --color-Telegram: #0088cc;
+  /* ------ */
+  /* FOOTER */
+  /* ------ */
+  --color-footer-section-horisontal-line: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* REMOVE BULLET POINTS FROM ALL LIST ITEMS */
+
+li {
+  list-style: none;
+}
+
+/* REMOVE "UNDERLINES" FROM ALL ANCHORS */
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================================== */
+/* STYLES FOR HEADING ELEMENTS - SMALLER SCREENS / MOBILE DEVICES */
+/* ============================================================== */
+
+/* ------------------------------ */
+/* STYLES FOR ALL HEADER ELEMENTS */
+/* ------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  margin: 0rem 0rem 2rem 0rem;
+  font-weight: 300;
+}
+
+/* ------------------------------------- */
+/* STYLES FOR INDIVIDUAL HEADER ELEMENTS */
+/* ------------------------------------- */
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: 0.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+/* ============================================================== */
+/* STYLES FOR HEADING ELEMENTS - LARGER SCREENS / PCs & LAPTOPS   */
+/* ============================================================== */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ======================================== */
+/* STYLING - STICKY HEADER & NAVIGATION BAR */
+/* ======================================== */
+
+header {
+  z-index: 999;
+  /* position: absolute; */
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 10rem;
+  transition: 0.5s ease;
+  /* background: #1b1b1b; */
+  background: rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo .logo-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+header .logo-text {
+  color: var(--color-00-main-white);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: var(--color-00-main-white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: "";
+  position: absolute;
+  background: var(--color-02-SageGreen);
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+/* ======================================================= */
+/* STYLING - VIDEO INFORMATION SLIDER & SOCIAL MEDIA LINKS */
+/* ======================================================= */
+
+section {
+  padding: 100px 200px;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--color-03-HippieGreen);
+}
+
+.home:before {
+  z-index: 777;
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* ---------------------- */
+/* STYLING - VIDEO SLIDER */
+/* ---------------------- */
+
+.home video {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s ease;
+  transition-property: clip-path;
+}
+
+/* --------------------------------- */
+/* STYLING - VIDEO SLIDER NAVIGATION */
+/* --------------------------------- */
+
+.slider-navigation {
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(250px);
+  margin-bottom: 2rem;
+}
+
+.slider-navigation .nav-btn {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: var(--color-01-TimberWolf);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--color-box-shadow-01);
+  transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active {
+  background: var(--color-02-SageGreen);
+}
+
+.slider-navigation .nav-btn:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.slider-navigation .nav-btn:hover {
+  transform: scale(1.3);
+}
+
+/* ----------------------- */
+/* STYLING - VIDEO CONTENT */
+/* ----------------------- */
+
+.home .content {
+  z-index: 888;
+  color: var(--color-00-main-white);
+  width: 70%;
+  margin-top: 5rem;
+  margin-left: -9rem;
+  display: none;
+}
+
+.home .content.active {
+  display: block;
+}
+
+.home .content h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.3rem; */
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.home .content p {
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-01-TimberWolf);
+}
+
+.home .content a {
+  background: var(--color-03-HippieGreen);
+  color: var(--color-01-TimberWolf);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 1.5rem 2.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ---------------------------- */
+/* STYLING - SOCIAL MEDIA LINKS */
+/* ---------------------------- */
+
+.home .media-icons {
+  z-index: 888;
+  position: absolute;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.home .media-icons a {
+  color: var(--color-01-TimberWolf);
+  font-size: 2.2rem;
+  transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+  transform: scale(1.3);
+}
+
+/* ===================================================== */
+/* MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF HEADER  */
+/* ===================================================== */
+
+@media (max-width: 1070px) {
+  header .logo-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  header {
+    padding: 1.2rem 2rem;
+  }
+
+  section {
+    padding: 10rem 2rem;
+  }
+
+  .home .content {
+    margin-left: 0rem;
+  }
+
+  .home .media-icons {
+    right: 1.5rem;
+  }
+
+  header .navigation {
+    display: none;
+    /* position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5); */
+  }
+
+  header .navigation.active {
+    /* display: none; */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a {
+    color: var(--color-01-TimberWolf);
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+
+  header .navigation .navigation-items a:before {
+    background: var(--color-00-main-white);
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items {
+    background: var(--color-03-HippieGreen);
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    /* box-shadow: 0 5px 25px rgb(1 1 1 / 20%); */
+    box-shadow: var(--color-box-shadow-01);
+  }
+
+  .menu-btn {
+    background: url(../images/Navigation/menu_hamburger.png) no-repeat;
+    background-size: 3rem;
+    background-position: center;
+    width: 4rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active {
+    z-index: 999;
+    background: url(../images/Navigation/menu_close.png) no-repeat;
+    background-size: 3rem;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+}
+
+@media (max-width: 560px) {
+  .slider-navigation {
+    transform: translateY(255px);
+    margin-bottom: 1rem;
+  }
+
+  .slider-navigation .nav-btn {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .home .content h1 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  .home .content p {
+    font-size: 1.3rem;
+  }
+
+  .home .content a {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+
+  header .navigation .navigation-items a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .slider-navigation .nav-btn {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+
+  .home .content h1 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .home .content p {
+    font-size: 1.1rem;
+  }
+
+  .home .content a {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+
+  header .navigation .navigation-items a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .home .content h1 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .home .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 290px) {
+  .home .content h1 {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+  }
+}
+
+/* ======================= */
+/* CATEGORY 01 - WOMEN     */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 02 - MEN       */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 03 - KIDS      */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 04 - COMBOS    */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 05 - GIFTS     */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 06 - GEAR      */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 07 - TECH      */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 08 - RESELLERS */
+/* ======================= */
+
+/* ======================= */
+/* CATEGORY 09 - CONTACT   */
+/* ======================= */
+
+/* ======================= */
+/* CLIENT TESTIMONIALS     */
+/* ======================= */
+
+/* ======================= */
+/* FOOTER                  */
+/* ======================= */
+
+/* HORIZONTAL ROW */
+
+hr {
+  height: 0.1rem;
+  border: none;
+  background-color: var(--color-footer-section-horisontal-line);
+  margin: 1rem 0rem 1.5rem 0rem;
+}
+
+.horizontal__row__height {
+  height: 0.1rem;
+  border: none;
+  background-color: var(--color-00-main-white);
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* ================================== */
+/* FOOTER - STYLING OF MAIN CONTAINER */
+/* ================================== */
+
+.footer__section__main__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF FOOTER MAIN CONTAINER  */
+
+@media screen and (max-width: 830px) {
+  .footer__section__main__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer__section__main__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer__section__main__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ====================== */
+/* FOOTER - BASIC STYLING */
+/* ====================== */
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-05-BrunswickGreen);
+  box-shadow: var(--color-box-shadow-01);
+  transition: background 0.3s linear;
+}
+
+/* ========================== */
+/* FOOTER - SECTION CONTAINER */
+/* ========================== */
+
+.footer__section__container {
+  max-width: 124rem;
+  padding: 2rem 4rem 3rem 4rem;
+  margin: auto;
+}
+
+/* ----------------------------- */
+/* FOOTER - PAGE TITLE CONTAINER */
+/* ----------------------------- */
+
+.footer__page__title__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+/* ------------------- */
+/* FOOTER - PAGE TITLE */
+/* ------------------- */
+
+.footer__page__title h5 {
+  display: flex;
+  color: var(--color-00-main-white);
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  /* text-transform: uppercase; */
+  width: 100%;
+  padding: 0rem 1rem 0rem 1rem;
+  text-align: center;
+}
+
+/* -------------------------- */
+/* FOOTER - CONTENT CONTAINER */
+/* -------------------------- */
+
+.footer__content__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+/* ---------------------------------- */
+/* FOOTER - COMPANY PROFILE CONTAINER */
+/* ---------------------------------- */
+
+.footer__company__profile__container {
+  margin: 0rem 1rem 1rem 0.5rem;
+}
+
+/* --------------------- */
+/* FOOTER - COMPANY LOGO */
+/* --------------------- */
+
+.footer__company__profile__container .footer__company__profile__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.footer__company__profile__container img {
+  width: 30rem;
+  height: auto;
+}
+
+/* ---------------------------- */
+/* FOOTER - COMPANY DESCRIPTION */
+/* ---------------------------- */
+
+.footer__company__profile__description {
+  max-width: 30rem;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.3rem;
+  margin: 3rem 1rem 3rem 1rem;
+}
+
+.footer__company__profile__description p {
+  color: var(--color-01-TimberWolf);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+/* ----------------------------- */
+/* FOOTER - COMPANY SOCIAL MEDIA */
+/* ----------------------------- */
+
+/* SOCIAL MEDIA CONTAINER  */
+
+.footer__company__profile__social__media__container {
+  position: relative;
+  max-width: 30rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+}
+
+/* SOCIAL MEDIA LINKS */
+
+.footer__profile__social__media__links ul {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.footer__profile__social__media__links ul li {
+  list-style: none;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.footer__profile__social__media__links ul li .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  line-height: 2rem;
+  transition: 0.6s;
+  color: var(--color-01-TimberWolf);
+}
+
+.footer__profile__social__media__links ul li .fab:hover {
+  color: var(--color-00-main-white);
+}
+
+.footer__profile__social__media__links ul li a {
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-03-HippieGreen);
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+.footer__profile__social__media__links ul li a:hover {
+  transform: translate(0, -0.4rem);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - FACEBOOK */
+
+.footer__profile__social__media__links ul li:nth-child(1) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - INSTAGRAM */
+
+.footer__profile__social__media__links ul li:nth-child(2) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - TWITTER / X */
+
+.footer__profile__social__media__links ul li:nth-child(3) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - TIKTOK */
+
+.footer__profile__social__media__links ul li:nth-child(4) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* IMPLEMENT BACKGROUND COLOR ON HOVER - YOUTUBE */
+
+.footer__profile__social__media__links ul li:nth-child(5) a:hover {
+  background-color: var(--color-00-main-black);
+}
+
+/* ---------------------- */
+/* FOOTER - SITEMAP LINKS */
+/* ---------------------- */
+
+/* SITEMAP - ALL COLUMNS CONTAINER */
+
+.footer__column__container__all {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__column__container__all ul li {
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* SITEMAP - COLUMN HEADERS & LINKS (GENERAL STYLING) */
+
+.footer__column__group__header {
+  margin: 0rem 3rem 0rem 8rem;
+}
+
+li.footer__column__group__name {
+  color: var(--color-00-main-white);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer__column__group__header li {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.footer__column__group__header li a {
+  color: var(--color-01-TimberWolf);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 0.9rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.footer__column__group__header li.footer__column__group__name a {
+  color: var(--color-00-main-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 0.9rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.footer__column__group__header li a:hover {
+  color: var(--color-02-SageGreen);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer__column__group__item {
+  color: var(--color-01-TimberWolf);
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* SITEMAP - COLUMN 1 - STYLING - FAX, EMAIL, WHATSAPP */
+
+.footer__column__group__fax,
+.footer__column__group__whatsapp,
+.footer__column__group__email {
+  display: flex;
+  justify-content: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-01-TimberWolf);
+}
+
+.footer__column__group__fax img,
+.footer__column__group__whatsapp img,
+.footer__column__group__email img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.footer__column__group__email a,
+.footer__column__group__whatsapp a {
+  text-decoration: none;
+  color: var(--color-01-TimberWolf);
+}
+
+/* ==================================================== */
+/* FOOTER - BOTTOM - COPYRIGHT / PAIA / POPI / PRIVACY  */
+/* ==================================================== */
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-weight: 600;
+}
+
+.copy__right {
+  margin: 0rem 0rem 0rem 0.5rem;
+  color: var(--color-00-main-white);
+  display: flex;
+  align-items: center;
+}
+
+.copy__right span {
+  margin: 0rem 0rem 0rem 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.footer__bottom__policies a {
+  color: var(--color-00-main-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0rem 0.5rem 0rem 2rem;
+}
+
+.footer__bottom__policies a:hover {
+  color: var(--color-02-SageGreen);
+}
+
+/* ============================================================= */
+/* FOOTER : MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF FOOTER */
+/* ============================================================= */
+
+/* =================== */
+/* BREAKPOINT:  1920px */
+/* =================== */
+
+@media screen and (max-width: 1920px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 8rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 8rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  1500px */
+/* =================== */
+
+@media screen and (max-width: 1500px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 8rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  1300px */
+/* =================== */
+
+@media screen and (max-width: 1300px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 8rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1250 px */
+/* ==================== */
+
+@media screen and (max-width: 1250px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 6rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1200 px */
+/* ==================== */
+
+@media screen and (max-width: 1200px) {
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 5.25rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1165 px */
+/* ==================== */
+
+@media screen and (max-width: 1165px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 7rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 4rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1130 px */
+/* ==================== */
+
+@media screen and (max-width: 1130px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 6rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 3rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1110 px */
+/* ==================== */
+
+@media screen and (max-width: 1110px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 5rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 2.5rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1085 px */
+/* ==================== */
+
+@media screen and (max-width: 1085px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 4rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 2rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1070 px */
+/* ==================== */
+
+@media screen and (max-width: 1070px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 3rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}
+
+/* ==================== */
+/* BREAKPOINT:  1040 px */
+/* ==================== */
+
+@media screen and (max-width: 1040px) {
+  .footer__column__group__header {
+    margin: 0rem 3rem 0rem 2rem;
+  }
+
+  .footer__column__content {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  980 px */
+/* =================== */
+
+@media screen and (max-width: 980px) {
+  .footer__column__group__header {
+    margin: 0rem 2.75rem 0rem 3.5rem;
+  }
+
+  .footer__company__profile__container img {
+    width: 25rem;
+  }
+
+  .footer__company__profile__description p {
+    font-size: 1.1rem;
+  }
+
+  li.footer__column__group__name {
+    font-size: 1.2rem;
+  }
+
+  .footer__column__group__item {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__header li a {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__header li a.combos__header {
+    font-size: 1.2rem;
+  }
+
+  .footer__column__group__header li a.gifts__header {
+    font-size: 1.2rem;
+  }
+
+  .footer__column__group__email p,
+  .footer__column__group__fax p,
+  .footer__column__group__whatsapp p {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__fax img,
+  .footer__column__group__whatsapp img,
+  .footer__column__group__email img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .copy__right span,
+  .footer__bottom__policies a {
+    font-size: 1.2rem;
+  }
+
+  .footer__profile__social__media__links ul li .fab {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .footer__profile__social__media__links ul li a {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  965 px */
+/* =================== */
+
+@media screen and (max-width: 965px) {
+  .footer__column__group__header {
+    margin: 0rem 2.5rem 0rem 3rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  940 px */
+/* =================== */
+
+@media screen and (max-width: 9405px) {
+  .footer__column__group__header {
+    margin: 0rem 2rem 0rem 2.5rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  915 px */
+/* =================== */
+
+@media screen and (max-width: 915px) {
+  .footer__company__profile__container img {
+    width: 25rem;
+  }
+
+  .footer__company__profile__description {
+    max-width: 25rem;
+  }
+
+  .footer__company__profile__description p {
+    line-height: 1.6rem;
+  }
+
+  .footer__company__profile__social__media__container {
+    max-width: 25rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  865 px */
+/* =================== */
+
+@media screen and (max-width: 865px) {
+  .footer__column__group__header {
+    margin: 0rem 2rem 0rem 2.5rem;
+  }
+
+  .footer__company__profile__description p {
+    font-size: 1rem;
+  }
+
+  li.footer__column__group__name {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__item {
+    font-size: 1rem;
+  }
+
+  .footer__column__group__header li a {
+    font-size: 1rem;
+  }
+
+  .footer__column__group__header li a.combos__header {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__header li a.gifts__header {
+    font-size: 1.1rem;
+  }
+
+  .footer__column__group__email p,
+  .footer__column__group__fax p,
+  .footer__column__group__whatsapp p {
+    font-size: 1rem;
+  }
+
+  .footer__column__group__fax img,
+  .footer__column__group__whatsapp img,
+  .footer__column__group__email img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .footer__profile__social__media__links ul li .fab {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+
+  .footer__profile__social__media__links ul li a {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .copy__right span,
+  .footer__bottom__policies a {
+    font-size: 1.1rem;
+  }
+
+  .footer__bottom__policies a {
+    margin: 0rem 0.5rem 0rem 1.5rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  835 px */
+/* =================== */
+
+/* SPLIT INTO 1 COLUMN  */
+
+@media screen and (max-width: 835px) {
+  footer {
+    position: relative;
+  }
+
+  .footer__content__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__column__container__all {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .footer__column__container__all .footer__column__content {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    gap: 2rem;
+  }
+
+  .footer__column__content .footer__column__group__number {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .footer__company__profile__container .footer__company__profile__logo {
+    justify-content: center;
+  }
+
+  .footer__company__profile__description {
+    font-size: 1rem;
+    margin: 3rem 0.5rem 3rem 0.5rem;
+  }
+
+  .footer__company__profile__social__media__container {
+    margin-bottom: 2rem;
+  }
+
+  .footer__column__container__all {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .footer__column__group__header {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .footer__column__group__number {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__column__group__email,
+  .footer__column__group__fax,
+  .footer__column__group__whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .footer__bottom__policies a {
+    margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  415 px */
+/* =================== */
+
+@media screen and (max-width: 415px) {
+  .footer__column__container__all {
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    flex: wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__column__container__all .footer__column__content {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__column__content .footer__column__group__number {
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+}
+
+/* =================== */
+/* BREAKPOINT:  370 px */
+/* =================== */
+
+@media screen and (max-width: 370px) {
+  .footer__company__profile__description {
+    margin: 1rem 0.5rem 2rem 0.5rem;
+    max-width: 30rem;
+    height: 8rem;
+  }
+
+  .footer__profile__social__media__links ul li {
+    margin: 0rem 0.4rem 0rem 0.4rem;
+  }
+
+  .footer__company__profile__container img {
+    width: 21rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .footer__company__profile__description p {
+    width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__company__profile__social__media__container {
+    max-width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footer__content__container {
+    max-width: 100%;
+  }
+
+  .footer__company__profile__container {
+    width: 22rem;
+    margin: 0rem 0rem 0rem -2rem;
+  }
+
+  .footer__column__container__all {
+    margin: 1.5rem 0rem 0rem -2rem;
+  }
+}
