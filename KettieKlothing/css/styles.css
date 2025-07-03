@@ -607,9 +607,923 @@ section {
 /* CATEGORY 07 - TECH      */
 /* ======================= */
 
-/* ======================= */
-/* CATEGORY 08 - RESELLERS */
-/* ======================= */
+/* ========================================================================= */
+/* RESELLERS - DUAL SIGNUP SECTION - BECOME AS RESELLER OR GET OUR CATALOGUE */
+/* ========================================================================= */
+
+:root {
+  /* ----------------------------------------- */
+  /* RESELLER / CATALOGUE SECTION COLOR SCHEME */
+  /* ----------------------------------------- */
+  --color-resellers-background: #dad7cd;
+  --color-resellers-background-gradient-1: #a3b18a;
+  --color-resellers-background-gradient-2: #588157;
+  /* --color-resellers-form-title: #344e41; */
+  --color-resellers-form-title: #588157;
+  /* --color-resellers-form-popi-and-privacy-text: #344e41; */
+  --color-resellers-form-popi-and-privacy-text: #588157;
+  --color-resellers-form-input-field-background: #ffffff;
+  --color-resellers-form-input-field-placeholder: #000000;
+  --color-resellers-form-input-field-icons: #588157;
+  --color-resellers-form-input-field-text: #000000;
+}
+
+.resellers__signup__section {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  /* padding: 2rem 0rem 0rem 0rem; */
+  /* border: 1px solid green; */
+}
+
+@media screen and (max-width: 830px) {
+  .resellers__signup__section {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .resellers__signup__section {
+    position: relative;
+    top: 14.5rem;
+  }
+}
+
+/* ------------------------------------------------------- */
+/* SIGNUP (PART 1) - MAIN CONTAINER (RESELLER / CATALOGUE) */
+/* ------------------------------------------------------- */
+
+.resellers__signup__container {
+  position: relative;
+  margin: 2rem 0.25rem 2rem 0.25rem;
+  /* width: 100%; */
+  width: 95vw;
+  /* min-height: 100vh; */
+  height: 100vh;
+  background-color: var(--color-resellers-background);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-04);
+  /* border: 1px solid green; */
+}
+
+/* SET THE CONTAINER (BEFORE) - DOUBLE THE SIZE OF THE ORiGINAL CONTAINER */
+
+.resellers__signup__container:before {
+  content: "";
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  background: linear-gradient(
+    -45deg,
+    var(--color-resellers-background-gradient-2),
+    var(--color-resellers-background-gradient-1)
+  );
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  z-index: 6;
+  transition: 1.8s ease-in-out;
+}
+
+/* ------------------------------------------------------------- */
+/* SIGNUP (PART 2) - FORMS CONTAINER (HOLDING ALL FORM ELEMENTS) */
+/* ------------------------------------------------------------- */
+
+/* ALL FORM ELEMENTS (CONTAINER) */
+
+.resellers__signup__container .reseller__forms__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  /* border: 5px solid red; */
+}
+
+/* ONLY ELEMENTS WITHIN THE FORMS CONTAINER (INPUT, CLEAR, SUBMIT) */
+
+.resellers__signup__container .reseller__signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+  /* border: 5px solid red; */
+}
+
+/* -------------------------------- */
+/* SIGNUP (PART 3) - FORMS ELEMENTS */
+/* -------------------------------- */
+
+.resellers__signup__container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 5rem 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* TO DISPLAY THE SIGN IN FORM FIRST */
+/* HIGHER Z-INDEX & OPACITY = 1      */
+
+.resellers__signup__container form.catalogue__signup__form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.resellers__signup__container form.reseller__signup__form {
+  z-index: 2;
+}
+
+/* ============================== */
+/* TODO: FORM 1 (RESELLER SIGNUP) */
+/* ============================== */
+
+/* ------------------------- */
+/* FORM 1 (RESELLER) - TITLE */
+/* ------------------------- */
+
+.resellers__signup__container .title {
+  margin: 0rem 0rem 1.5rem 0rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-resellers-form-title);
+}
+
+/* ---------------------------------------------- */
+/* FORM 1 (RESELLER) - POPI AND PRIVACY STATEMENT */
+/* ---------------------------------------------- */
+
+.resellers__signup__container .reseller__popi__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0rem 0.4rem 2.5rem 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.resellers__signup__container .reseller__popi__privacy__statement strong {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--color-resellers-form-popi-and-privacy-text);
+}
+
+.resellers__signup__container .reseller__popi__privacy__statement a {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--color-resellers-form-popi-and-privacy-text);
+  cursor: pointer;
+}
+
+/* ------------------------------------------- */
+/* FORM 1 (RESELLER) - INPUT-FIELD (CONTAINER) */
+/* ------------------------------------------- */
+
+.resellers__signup__container .reseller__input__field {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  border-radius: 1rem;
+  margin: 0.5rem 0rem 1rem 0rem;
+  padding: 0rem 1rem 0rem 0.5rem;
+  max-width: 30rem;
+  width: 100%;
+  height: 4.5rem;
+  background-color: var(--color-resellers-form-input-field-background);
+}
+
+/* -------------------------------------- */
+/* FORM 1 (RESELLER) - INPUT-FIELD (ICON) */
+/* -------------------------------------- */
+
+.resellers__signup__container .reseller__input__field i {
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  transition: 0.5s;
+  color: var(--color-resellers-form-input-field-icons);
+}
+
+/* -------------------------------------------- */
+/* FORM 1 (RESELLER) - INPUT-FIELD (INPUT-AREA) */
+/* -------------------------------------------- */
+
+.resellers__signup__container .reseller__input__field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-resellers-form-input-field-text);
+}
+
+.resellers__signup__container .reseller__input__field input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-resellers-form-input-field-placeholder);
+}
+
+/* -------------------------------------------- */
+/* FORM 1 (RESELLER) - INPUT-FIELD (SELECT) */
+/* -------------------------------------------- */
+
+.resellers__signup__container .reseller__input__field select {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-resellers-form-input-field-text);
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM (BUTTON)  FIXME: */
+/* ----------------------------- */
+
+.resellers__signup__container .btn {
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 30rem;
+  height: 4rem;
+  cursor: pointer;
+  background-color: var(--color-shopper-login-page-button-background);
+  color: var(--color-shopper-login-page-button-text);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+  /* opacity: 1; */
+}
+
+.resellers__signup__container .btn:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+/* .shopper__registration__form__group .g-recaptcha {
+  width: 100%;
+  margin: 0.5rem 0.5rem 0rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+/* transform: scale(0.89); */
+/* transform: scale(0.95); */
+/* -webkit-transform: scale(0.89); */
+/* -webkit-transform: scale(0.95);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+} */
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* FIXME:TODO:FIXME:  JAVASCRIPT TO MAKE GOOGLE RECAPTCHA A REQUIREMENT ON FORM SUBMISSION FIXME:TODO:FIXME: */
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* #g-recaptcha-responses .shopper__registration__form__group {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
+@media screen and (max-width: 506px) {
+  .shopper__registration__form__group .g-recaptcha {
+    margin: 0.5rem 0.5rem -1.8rem 7.5rem;
+    transform: scale(0.67);
+    -webkit-transform: scale(0.67);
+  }
+} */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - REGISTER AND LOGIN PAGE - LEFT AND RIGHT PANELS                                                       */
+/* ===================================================================================================================== */
+
+/* ---------------------------- */
+/* FIXME:  PANEL IMAGES  FIXME: */
+/* ---------------------------- */
+
+.resellers__signup__container .image {
+  padding: 5rem 5rem 5rem 5rem;
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+/* ------------------------------------------------------------------ */
+/* FIXME:  PANEL CONTAINER (MAIN - HOLDING ALL PANEL ELEMENTS) FIXME: */
+/* ------------------------------------------------------------------ */
+
+.resellers__signup__container .panels-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/* FIXME:  PANEL CONTAINER (SUB - HOLDING EITHER LEFT / RIGHT ELEMENTS) FIXME: */
+/* --------------------------------------------------------------------------- */
+
+.resellers__signup__container .panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: center;
+  z-index: 6;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PANEL CONTAINER (LEFT) FIXME: */
+/* ------------------------------------- */
+
+.resellers__signup__container .left-panel {
+  pointer-events: all;
+  /* padding: 3rem 17% 2rem 12%; */
+  padding: 3rem 17% 2rem 12%;
+}
+
+/* -------------------------------------- */
+/* FIXME:  PANEL CONTAINER (RIGHT) FIXME: */
+/* -------------------------------------- */
+
+.resellers__signup__container .right-panel {
+  pointer-events: none;
+  /* padding: 3rem 12% 2rem 17%; */
+  padding: 3rem 17% 2rem 12%;
+}
+
+/* ----------------------------- */
+/* FIXME:  PANEL CONTENT  FIXME: */
+/* ----------------------------- */
+
+.resellers__signup__container .panel .content {
+  color: var(--color-shopper-panel-text);
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.resellers__signup__container .panel h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.resellers__signup__container .panel p {
+  font-size: 1.3rem;
+  padding: 0rem 0rem 1rem 0rem;
+  text-align: justify;
+}
+
+/* ----------------------------- */
+/* FIXME:  PANEL BUTTONS  FIXME: */
+/* ----------------------------- */
+
+.resellers__signup__container .btn.transparent {
+  margin: 0rem 0rem 0rem 0rem;
+  background: none;
+  border: 2px solid var(--color-shopper-panel-button-border);
+  color: white;
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+}
+
+.resellers__signup__container .right-panel .image,
+.resellers__signup__container .right-panel .content {
+  transform: translateX(800px);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - ANIMATION (MOVING FROM ONE PANEL TO THE OTHER) - FIXME:  PART OF JAVASCRIPT CODE  FIXME:              */
+/* ===================================================================================================================== */
+
+.resellers__signup__container.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.resellers__signup__container.sign-up-mode .left-panel .image,
+.resellers__signup__container.sign-up-mode .left-panel .content {
+  transform: translateX(-800px);
+}
+
+.resellers__signup__container.sign-up-mode .reseller__signup {
+  left: 25%;
+}
+
+.resellers__signup__container.sign-up-mode form.catalogue__signup__form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.resellers__signup__container.sign-up-mode form.reseller__signup__form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.resellers__signup__container.sign-up-mode .right-panel .image,
+.resellers__signup__container.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
+.resellers__signup__container.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+
+.resellers__signup__container.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - MEDIA QUERIES (FOR SMALLER SCREENS / PHONES)                                                          */
+/* ===================================================================================================================== */
+
+@media (max-width: 870px) {
+  .resellers__signup__container {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .resellers__signup__container .reseller__signup {
+    width: 100%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .resellers__signup__container .image {
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .resellers__signup__container .reseller__signup,
+  .resellers__signup__container.sign-up-mode .reseller__signup {
+    left: 50%;
+  }
+
+  .resellers__signup__container .panels-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .resellers__signup__container .panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+    grid-column: 1 / 2;
+  }
+
+  .resellers__signup__container .right-panel {
+    grid-row: 3 / 4;
+  }
+
+  .resellers__signup__container .left-panel {
+    grid-row: 1 / 2;
+  }
+
+  .resellers__signup__container .panel .content {
+    padding-right: 15%;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  .resellers__signup__container:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .resellers__signup__container.sign-up-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .resellers__signup__container.sign-up-mode .left-panel .image,
+  .resellers__signup__container.sign-up-mode .left-panel .content {
+    transform: translateY(-300px);
+  }
+
+  .resellers__signup__container.sign-up-mode .right-panel .image,
+  .resellers__signup__container.sign-up-mode .right-panel .content {
+    transform: translateY(0px);
+  }
+
+  .resellers__signup__container .right-panel .image,
+  .resellers__signup__container .right-panel .content {
+    transform: translateY(300px);
+  }
+
+  .resellers__signup__container.sign-up-mode .reseller__signup {
+    top: 5%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 570px) {
+  .resellers__signup__container form {
+    padding: 0 1.5rem;
+  }
+
+  .resellers__signup__container .panel .content {
+    padding: 0.5rem 1rem;
+  }
+
+  .resellers__signup__container {
+    padding: 1.5rem;
+  }
+
+  .resellers__signup__container:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .resellers__signup__container.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - FORM - CHECKBOX OPTIONS                                                                               */
+/* ===================================================================================================================== */
+
+.resellers__signup__container .form__group {
+  margin: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.resellers__signup__container .form__group__double {
+  margin: 0rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.resellers__signup__container label .label__strong {
+  color: var(--color-shopper-privacy-text);
+}
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.resellers__signup__container .checkbox__option {
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  cursor: pointer;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.resellers__signup__container input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-shopper-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.resellers__signup__container input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-shopper-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-shopper-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-shopper-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.checkbox__option + .checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.resellers__signup__container input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-shopper-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.resellers__signup__container input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.resellers__signup__container input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-shopper-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.resellers__signup__container .checkbox__option--disabled {
+  color: var(--color-shopper-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.resellers__signup__container input[type="checkbox"]:disabled {
+  color: var(--color-shopper-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------ */
+/* FIXME:  FINAL MEDIA QUERY - CHECKBOX */
+/* ------------------------------------ */
+
+@media screen and (max-width: 870px) {
+  .resellers__signup__container .image {
+    width: 220px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .resellers__signup__container .panel h3 {
+    margin: -1rem 0rem 1rem 0rem;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .resellers__signup__container .panel p {
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+
+  .resellers__signup__container .btn.transparent {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .resellers__signup__container .image {
+    width: 200px;
+  }
+
+  .resellers__signup__container .panel h3 {
+    margin: -1rem 0rem 0.75rem 0rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .resellers__signup__container .panel p {
+    margin: 0rem 0rem 0.5rem 0rem;
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+
+  .resellers__signup__container .btn.transparent {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .resellers__signup__container .image {
+    width: 200px;
+  }
+
+  .resellers__signup__container .panel h3 {
+    margin: -0.5rem 0rem 0.75rem 0rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .resellers__signup__container .panel p {
+    margin: 0rem 0rem 0.5rem 0rem;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .resellers__signup__container .image {
+    width: 180px;
+  }
+
+  .resellers__signup__container .panel h3 {
+    margin: -0.5rem 0rem 0.5rem 0rem;
+    font-size: 1.65rem;
+    text-align: center;
+  }
+
+  .resellers__signup__container .panel p {
+    margin: 0rem 0rem 0.25rem 0rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .resellers__signup__container .image {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  .resellers__signup__container .image {
+    width: 120px;
+  }
+
+  .resellers__signup__container .reseller__input__field {
+    margin: 0.5rem 0rem 0.5rem -2.75rem;
+    max-width: 21rem;
+  }
+
+  .resellers__signup__container .btn {
+    margin: 0rem 0rem 1.5rem -2.75rem;
+    max-width: 21rem;
+    font-size: 1.3rem;
+  }
+
+  .resellers__signup__container .reseller__popi__privacy__statement {
+    margin: 0rem 0rem 1.5rem -2.75rem;
+    max-width: 21rem;
+    font-size: 0.85rem;
+  }
+
+  .resellers__signup__container .title {
+    margin: 0rem 0rem 1rem -2.75rem;
+    font-size: 2rem;
+    max-width: 21rem;
+    text-align: center;
+  }
+
+  .resellers__signup__container .social-text {
+    font-size: 1.1rem;
+    margin: -1.25rem 0rem 0rem -2.75rem;
+  }
+
+  .resellers__signup__container .social-icon {
+    margin: -0.25rem 2.25rem 0.5rem -0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-shopper-login-page-social-media-icons-border);
+    color: var(--color-shopper-login-page-social-media-icons);
+    transition: 0.3s;
+  }
+
+  .resellers__signup__container .panel h3 {
+    margin: -1rem 0rem 1rem -2.75rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .resellers__signup__container .panel p {
+    margin: 0rem 0rem 1rem -2.75rem;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+
+  .resellers__signup__container .btn.transparent {
+    margin: 0rem 0rem 0rem -2.75rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .resellers__signup__container .form__group {
+    margin: 0.5rem 0rem 1rem -2.75rem;
+    padding: 0rem 0rem 0rem 0rem;
+    max-width: 21rem;
+  }
+
+  .resellers__signup__container .form__group__double {
+    margin: 0.5rem 0rem 1rem -2.75rem;
+    padding: 0rem 0rem 0rem 0rem;
+    max-width: 21rem;
+  }
+
+  .resellers__signup__container .checkbox__option {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .resellers__signup__container .image {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .resellers__signup__container .image {
+    /* width: 75px; */
+    display: none;
+  }
+}
 
 /* ======================= */
 /* FOOTER - CONTACT        */
