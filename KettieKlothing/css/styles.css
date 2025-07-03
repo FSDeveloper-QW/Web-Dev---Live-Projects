@@ -612,9 +612,9 @@ section {
 /* ========================================================================= */
 
 :root {
-  /* ----------------------------------------- */
-  /* RESELLER / CATALOGUE SECTION COLOR SCHEME */
-  /* ----------------------------------------- */
+  /* ------------------------------------------------ */
+  /* RESELLER / CATALOGUE SIGNUP SECTION COLOR SCHEME */
+  /* ------------------------------------------------ */
   --color-resellers-background: #dad7cd;
   --color-resellers-background-gradient-1: #a3b18a;
   --color-resellers-background-gradient-2: #588157;
@@ -626,6 +626,13 @@ section {
   --color-resellers-form-input-field-placeholder: #000000;
   --color-resellers-form-input-field-icons: #588157;
   --color-resellers-form-input-field-text: #000000;
+  --color-resellers-form-checkbox-background: #ffffff;
+  --color-resellers-form-checkbox-border-normal: #588157;
+  --color-resellers-form-checkbox-border-focussed: #588157;
+  --color-resellers-form-checkbox-check-mark-checked: #588157;
+  --color-resellers-form-checkbox-disabled: #959495;
+  --color-resellers-form-submit-button-background: #000000;
+  --color-resellers-form-submit-button-text: #ffffff;
 }
 
 .resellers__signup__section {
@@ -753,13 +760,13 @@ section {
   z-index: 2;
 }
 
-/* ============================== */
-/* TODO: FORM 1 (RESELLER SIGNUP) */
-/* ============================== */
+/* ============================================== */
+/* TODO: FORM 1 & 2 (RESELLER & CATALOGUE SIGNUP) */
+/* ============================================== */
 
-/* ------------------------- */
-/* FORM 1 (RESELLER) - TITLE */
-/* ------------------------- */
+/* ----------------------------------------- */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - TITLE */
+/* ----------------------------------------- */
 
 .resellers__signup__container .title {
   margin: 0rem 0rem 1.5rem 0rem;
@@ -771,9 +778,9 @@ section {
   color: var(--color-resellers-form-title);
 }
 
-/* ---------------------------------------------- */
-/* FORM 1 (RESELLER) - POPI AND PRIVACY STATEMENT */
-/* ---------------------------------------------- */
+/* -------------------------------------------------------------- */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - POPI AND PRIVACY STATEMENT */
+/* -------------------------------------------------------------- */
 
 .resellers__signup__container .reseller__popi__privacy__statement {
   display: flex;
@@ -800,9 +807,9 @@ section {
   cursor: pointer;
 }
 
-/* ------------------------------------------- */
-/* FORM 1 (RESELLER) - INPUT-FIELD (CONTAINER) */
-/* ------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - INPUT-FIELD (CONTAINER) */
+/* ----------------------------------------------------------- */
 
 .resellers__signup__container .reseller__input__field {
   position: relative;
@@ -817,9 +824,9 @@ section {
   background-color: var(--color-resellers-form-input-field-background);
 }
 
-/* -------------------------------------- */
-/* FORM 1 (RESELLER) - INPUT-FIELD (ICON) */
-/* -------------------------------------- */
+/* ------------------------------------------------------ */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - INPUT-FIELD (ICON) */
+/* ------------------------------------------------------ */
 
 .resellers__signup__container .reseller__input__field i {
   text-align: center;
@@ -829,9 +836,9 @@ section {
   color: var(--color-resellers-form-input-field-icons);
 }
 
-/* -------------------------------------------- */
-/* FORM 1 (RESELLER) - INPUT-FIELD (INPUT-AREA) */
-/* -------------------------------------------- */
+/* ------------------------------------------------------------ */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - INPUT-FIELD (INPUT-AREA) */
+/* ------------------------------------------------------------ */
 
 .resellers__signup__container .reseller__input__field input {
   background: none;
@@ -850,9 +857,9 @@ section {
   color: var(--color-resellers-form-input-field-placeholder);
 }
 
-/* -------------------------------------------- */
-/* FORM 1 (RESELLER) - INPUT-FIELD (SELECT) */
-/* -------------------------------------------- */
+/* -------------------------------------------------------- */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - INPUT-FIELD (SELECT) */
+/* -------------------------------------------------------- */
 
 .resellers__signup__container .reseller__input__field select {
   background: none;
@@ -861,24 +868,166 @@ section {
   line-height: 1;
   font-size: 1.3rem;
   font-weight: 600;
+  margin: 0rem 0rem 0rem 0rem;
   color: var(--color-resellers-form-input-field-text);
 }
 
-/* ----------------------------- */
-/* FIXME:  FORM (BUTTON)  FIXME: */
-/* ----------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - T's & C's (ACCEPT PRIVACY / ACCEPT CATALOGUE & DISCOUNT VOUCHERS) */
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ------------------ */
+/* CHECKBOX - OPTIONS */
+/* ------------------ */
+
+.resellers__signup__container .form__group {
+  margin: 1rem 0rem 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+  /* border: 1px solid red; */
+}
+
+.resellers__signup__container .form__group__double {
+  margin: 1rem 0rem 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+  /* border: 1px solid red; */
+}
+
+.resellers__signup__container label .label__strong {
+  color: purple;
+}
+
+/* --------------------- */
+/* CHECKBOX - INPUT TYPE */
+/* --------------------- */
+
+.resellers__signup__container .checkbox__option {
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  cursor: pointer;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.resellers__signup__container input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: orange;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* Color of Checkbox Background & Border   */
+/* --------------------------------------- */
+
+.resellers__signup__container input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-resellers-form-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: orange;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.2rem solid var(--color-resellers-form-checkbox-border-normal);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.checkbox__option + .checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* Color of Tick Mark when checked         */
+/* --------------------------------------- */
+
+.resellers__signup__container input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em
+    var(--color-resellers-form-checkbox-check-mark-checked);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.resellers__signup__container input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* Color of Checkbox Border when clicked */
+/* --------------------------------------- */
+
+.resellers__signup__container input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid
+    var(--color-resellers-form-checkbox-border-focussed);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* Color of Checkbox when disabled         */
+/* --------------------------------------- */
+
+.resellers__signup__container .checkbox__option--disabled {
+  color: var(--color-resellers-form-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.resellers__signup__container input[type="checkbox"]:disabled {
+  color: var(--color-resellers-form-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------- */
+/* FORM 1 & 2 (RESELLER & CATALOGUE) - SIGNUP BUTTON */
+/* ------------------------------------------------- */
 
 .resellers__signup__container .btn {
   border: none;
   outline: none;
   border-radius: 1rem;
-  margin: 0rem 0rem 1.5rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   width: 30rem;
   height: 4rem;
   cursor: pointer;
-  background-color: var(--color-shopper-login-page-button-background);
-  color: var(--color-shopper-login-page-button-text);
+  background-color: var(--color-resellers-form-submit-button-background);
+  color: var(--color-resellers-form-submit-button-text);
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -930,9 +1079,9 @@ section {
   }
 } */
 
-/* ===================================================================================================================== */
-/* TODO:  PART 4 - REGISTER AND LOGIN PAGE - LEFT AND RIGHT PANELS                                                       */
-/* ===================================================================================================================== */
+/* -------------------------------- */
+/* SIGNUP (PART 4) - LEFT AND RIGHT PANELS */
+/* -------------------------------- */
 
 /* ---------------------------- */
 /* FIXME:  PANEL IMAGES  FIXME: */
@@ -1196,135 +1345,6 @@ section {
     bottom: 28%;
     left: 50%;
   }
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 6 - FORM - CHECKBOX OPTIONS                                                                               */
-/* ===================================================================================================================== */
-
-.resellers__signup__container .form__group {
-  margin: 0rem 0rem 0rem 0rem;
-  display: flex;
-  justify-content: center;
-  max-width: 30rem;
-  width: 100%;
-  border-radius: 1rem;
-}
-
-.resellers__signup__container .form__group__double {
-  margin: 0rem 0rem 0rem 0rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 30rem;
-  width: 100%;
-  border-radius: 1rem;
-}
-
-.resellers__signup__container label .label__strong {
-  color: var(--color-shopper-privacy-text);
-}
-
-/* --------------------------------------- */
-/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
-/* --------------------------------------- */
-
-.resellers__signup__container .checkbox__option {
-  width: 100%;
-  font-size: 0.95rem;
-  font-weight: 500;
-  line-height: 1.5;
-  text-transform: none;
-  text-align: justify;
-  display: grid;
-  grid-template-columns: 1rem auto;
-  gap: 1.5rem;
-  margin: 0rem 0rem 0rem 0rem;
-  cursor: pointer;
-  padding: 1rem 1rem 1rem 1rem;
-}
-
-/* ------------------------------------ */
-/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
-/* ------------------------------------ */
-
-.resellers__signup__container input[type="checkbox"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-shopper-custom-checkbox-background);
-  /* Not removed via appearance */
-  margin: 0;
-}
-
-/* --------------------------------------- */
-/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
-/* --------------------------------------- */
-
-.resellers__signup__container input[type="checkbox"] {
-  appearance: none;
-  background-color: var(--color-shopper-custom-checkbox-background);
-  margin: 0;
-  font: inherit;
-  color: var(--color-shopper-custom-checkbox-border);
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0.15em solid var(--color-shopper-custom-checkbox-border);
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-  display: grid;
-  place-content: center;
-  cursor: pointer;
-}
-
-.checkbox__option + .checkbox__option {
-  margin-top: 1rem;
-}
-
-/* --------------------------------------- */
-/* CUSTOM CHECKBOX - CHECKED STATE         */
-/* --------------------------------------- */
-
-.resellers__signup__container input[type="checkbox"]::before {
-  content: "";
-  width: 0.7rem;
-  height: 0.7rem;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-shopper-custom-checkbox-checkmark);
-  /* Windows High Contrast Mode */
-  background-color: CanvasText;
-  /* Creating a checkmark with CLIP-PATH */
-  transform-origin: bottom left;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-}
-
-.resellers__signup__container input[type="checkbox"]:checked::before {
-  transform: scale(1);
-}
-
-/* --------------------------------------- */
-/* CUSTOM CHECKBOX - FOCUSSED STATE        */
-/* --------------------------------------- */
-
-.resellers__signup__container input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid var(--color-shopper-custom-checkbox-focus);
-  outline-offset: max(1px, 0.15em);
-}
-
-/* --------------------------------------- */
-/* CUSTOM CHECKBOX - DISABLED STATE        */
-/* --------------------------------------- */
-
-.resellers__signup__container .checkbox__option--disabled {
-  color: var(--color-shopper-custom-checkbox-disabled);
-  cursor: not-allowed;
-}
-
-.resellers__signup__container input[type="checkbox"]:disabled {
-  color: var(--color-shopper-custom-checkbox-disabled);
-  cursor: not-allowed;
 }
 
 /* ------------------------------------ */

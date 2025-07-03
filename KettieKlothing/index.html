@@ -541,9 +541,9 @@
 
     <div id="resellers" class="resellers__signup__section">
       <div class="resellers__signup__container">
-        <!-- ======================== -->
-        <!-- FORM 1 - RESELLER SIGNUP -->
-        <!-- ======================== -->
+        <!-- ============================== -->
+        <!-- TODO: FORM 1 - RESELLER SIGNUP -->
+        <!-- ============================== -->
         <div class="reseller__forms__container">
           <div class="reseller__signup">
             <form
@@ -552,13 +552,17 @@
               name="RESELLER SIGNUP"
               method="post"
             >
+              <!-- ========================= -->
               <!-- FORM 1 (RESELLER) - TITLE -->
+              <!-- ========================= -->
 
               <h2 class="title">
                 become a reseller<br />in your regional area
               </h2>
 
+              <!-- ============================================== -->
               <!-- FORM 1 (RESELLER) - POPI AND PRIVACY STATEMENT -->
+              <!-- ============================================= -->
 
               <div class="reseller__popi__privacy__statement">
                 <p>
@@ -574,7 +578,9 @@
                 </p>
               </div>
 
+              <!-- ================================================ -->
               <!-- FORM 1 (RESELLER) - INPUT FIELD (NAME & SURNAME) -->
+              <!-- ================================================ -->
 
               <div class="reseller__input__field">
                 <i class="fas fa-user"></i>
@@ -591,7 +597,9 @@
                 />
               </div>
 
+              <!-- ============================================== -->
               <!-- FORM 1 (RESELLER) - INPUT FIELD (MOBILE PHONE) -->
+              <!-- ============================================== -->
 
               <div class="reseller__input__field">
                 <i class="fas fa-mobile"></i>
@@ -608,7 +616,9 @@
                 />
               </div>
 
+              <!-- ======================================= -->
               <!-- FORM 1 (RESELLER) - INPUT FIELD (EMAIL) -->
+              <!-- ======================================= -->
 
               <div class="reseller__input__field">
                 <i class="fas fa-envelope"></i>
@@ -625,7 +635,9 @@
                 />
               </div>
 
+              <!-- ======================================== -->
               <!-- FORM 1 (RESELLER) - INPUT FIELD (REGION) -->
+              <!-- ======================================== -->
 
               <div class="reseller__input__field">
                 <i class="fas fa-map-marker"></i>
@@ -810,45 +822,46 @@
                 </select>
               </div>
 
-              <!-- --------------------------------------------------------- -->
-              <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
-              <!-- --------------------------------------------------------- -->
+              <!-- ===================================================================================== -->
+              <!-- FORM 1 (RESELLER) - T's & C's (ACCEPT PRIVACY / ACCEPT CATALOGUE & DISCOUNT VOUCHERS) -->
+              <!-- ===================================================================================== -->
 
               <div class="form__group__double">
                 <label class="checkbox__option"
-                  ><input type="checkbox" name="checkbox" required />I hereby
-                  accept the company's POPI and Privacy policies to protect my
-                  personal information *</label
+                  ><input type="checkbox" name="checkbox" required />I accept
+                  the company's POPI and PRIVACY policies to protect my personal
+                  information *</label
+                >
+                <label class="checkbox__option"
+                  ><input type="checkbox" name="checkbox" required />Add me to
+                  the mailing list to receive the product catalogue and monthly
+                  discount vouchers *</label
                 >
               </div>
 
-              <!-- ------------------------------------------------ -->
-              <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME:  -->
-              <!-- Google Recaptcha (Version 2)                     -->
-              <!-- "I am not a Robot"                               -->
-              <!-- Current Site Key - SHOPMAX Website               -->
-              <!-- ------------------------------------------------ -->
+              <!-- ================================================================================================ -->
+              <!-- FORM 1 (RESELLER) - TODO: GOOGLE RECAPTCHA TODO: IMPLEMENTATION (VERSION 2 - "I AM NOT A ROBOT") -->
+              <!-- CURRENT SITE KEY FOR KETTIE KLOTHING (PTY) LTD                                                  -->
+              <!-- ================================================================================================ -->
 
-              <!-- <div class="form__group">
+              <div class="form__group">
                 <div
                   class="g-recaptcha"
-                  data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
-                  data-theme="light"                  
+                  data-sitekey="6LfHvXUrAAAAAK8zOIxml8jwPQvE-EFA_R52j_S_"
+                  data-theme="light"
                 ></div>
-              </div> -->
+              </div>
 
-              <!-- ------------------------------ -->
-              <!-- FIXME:  SIGN IN BUTTON  FIXME: -->
-              <!-- ------------------------------ -->
+              <!-- ================================= -->
+              <!-- FORM 1 (RESELLER) - SIGNUP BUTTON -->
+              <!-- ================================= -->
 
-              <input type="submit" value="login" class="btn solid" />
+              <input type="submit" value="submit" class="btn solid" />
             </form>
 
-            <!-- ----------------------------------------------------------------------------------------------- -->
-
-            <!-- ------------------------------------------------ -->
-            <!-- FIXME:  FORM 2 - MAIN SIGN-UP / REGISTER  FIXME: -->
-            <!-- ------------------------------------------------ -->
+            <!-- =============================== -->
+            <!-- TODO: FORM 2 - CATALOGUE SIGNUP -->
+            <!-- =============================== -->
 
             <form
               action="https://formspree.io/f/mblywbdn"
@@ -856,120 +869,149 @@
               name="CATALOGUE SIGNUP"
               method="post"
             >
-              <!-- -------------------------- -->
-              <!-- FIXME:  FORM TITLE  FIXME: -->
-              <!-- -------------------------- -->
+              <!-- ========================== -->
+              <!-- FORM 2 (CATALOGUE) - TITLE -->
+              <!-- ========================== -->
 
-              <h2 class="title">new shopper registration</h2>
+              <h2 class="title">
+                receive our product catalogue<br />and monthly discount vouchers
+              </h2>
 
-              <!-- --------------------------------------------------- -->
-              <!-- FIXME:  SUB-HEADER - POPI & PRIVACY POLICY  FIXME:  -->
-              <!-- --------------------------------------------------- -->
+              <!-- =============================================== -->
+              <!-- FORM 2 (CATALOGUE) - POPI AND PRIVACY STATEMENT -->
+              <!-- =============================================== -->
 
-              <div class="product__quote__privacy__statement">
+              <div class="reseller__popi__privacy__statement">
                 <p>
-                  view our<a href="pdf/shopmax_popi_policy.pdf" target="_blank"
+                  view our<a
+                    href="pdf/kettieklothing_popi_policy.pdf"
+                    target="_blank"
                     ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
-                  >and<a href="pdf/shopmax_privacy_policy.pdf" target="_blank"
+                  >and<a
+                    href="pdf/kettieklothing_privacy_policy.pdf"
+                    target="_blank"
                     ><strong>&nbsp;&nbsp;PRIVACY&nbsp;&nbsp;</strong></a
-                  >Policies
+                  >Policies.
                 </p>
               </div>
 
-              <!-- ---------------------------- -->
-              <!-- FIXME:  INPUT FIELDS  FIXME: -->
-              <!-- ---------------------------- -->
+              <!-- ================================================= -->
+              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (NAME & SURNAME) -->
+              <!-- ================================================= -->
 
-              <div class="input-field">
+              <div class="reseller__input__field">
                 <i class="fas fa-user"></i>
                 <input
+                  id="catalogue-name"
                   type="text"
-                  placeholder="Username"
-                  id="new-shopper-username"
+                  placeholder="name & surname *"
                   value=""
-                  name="new-shopper-username"
+                  name="Name & Surname of Reseller"
                   minlength="3"
                   maxlength="75"
                   autocomplete="off"
                   required
                 />
               </div>
-              <div class="input-field">
-                <i class="fas fa-envelope"></i>
+
+              <!-- =============================================== -->
+              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (MOBILE PHONE) -->
+              <!-- =============================================== -->
+
+              <div class="reseller__input__field">
+                <i class="fas fa-mobile"></i>
                 <input
-                  type="email"
-                  placeholder="Email"
-                  id="new-shopper-email"
+                  id="catalogue-mobile"
+                  type="tel"
                   value=""
-                  name="new-shopper-email"
+                  name="Mobile Number of Reseller"
+                  placeholder="mobile number *"
                   minlength="3"
-                  maxlength="65"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input
-                  type="password"
-                  placeholder="Password"
-                  id="new-shopper-password"
-                  value=""
-                  name="new-shopper-password"
-                  minlength="3"
-                  maxlength="50"
+                  maxlength="13"
                   autocomplete="off"
                   required
                 />
               </div>
 
-              <!-- --------------------------------------------------------- -->
-              <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
-              <!-- --------------------------------------------------------- -->
+              <!-- ======================================== -->
+              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (EMAIL) -->
+              <!-- ======================================== -->
+
+              <div class="reseller__input__field">
+                <i class="fas fa-envelope"></i>
+                <input
+                  id="catalogue-email"
+                  type="email"
+                  value=""
+                  name="Email Address of Reseller"
+                  placeholder="email address *"
+                  minlength="3"
+                  maxlength="75"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <!-- ============================================= -->
+              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (BIRTH DATE) -->
+              <!-- ============================================= -->
+
+              <div class="reseller__input__field">
+                <i class="fas fa-birthday-cake"></i>
+                <input
+                  id="catalogue-birthdate"
+                  type="date"
+                  value=""
+                  name="Date of Birth"
+                  placeholder="date of birth *"
+                  min="1900-01-01"
+                  max="2099-12-31"
+                  required
+                />
+              </div>
+
+              <!-- ====================================================================================== -->
+              <!-- FORM 2 (CATALOGUE) - T's & C's (ACCEPT PRIVACY / ACCEPT CATALOGUE & DISCOUNT VOUCHERS) -->
+              <!-- ====================================================================================== -->
 
               <div class="form__group__double">
                 <label class="checkbox__option"
-                  ><input
-                    type="checkbox"
-                    name="Accept T's & C's and sign-up to newsletter"
-                    required
-                  />I hereby confirm my subscription to the weekly newsletter
-                  and accept the company's POPI and Privacy policies to protect
-                  my personal information *</label
+                  ><input type="checkbox" name="checkbox" required />I accept
+                  the company's POPI and PRIVACY policies to protect my personal
+                  information *</label
+                >
+                <label class="checkbox__option"
+                  ><input type="checkbox" name="checkbox" required />Add me to
+                  the mailing list to receive the product catalogue and monthly
+                  discount vouchers *</label
                 >
               </div>
 
-              <!-- ------------------------------------------------ -->
-              <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME:  -->
-              <!-- Google Recaptcha (Version 2)                     -->
-              <!-- "I am not a Robot"                               -->
-              <!-- Current Site Key - SHOPMAX Website               -->
-              <!-- ------------------------------------------------ -->
+              <!-- ================================================================================================= -->
+              <!-- FORM 2 (CATALOGUE) - TODO: GOOGLE RECAPTCHA TODO: IMPLEMENTATION (VERSION 2 - "I AM NOT A ROBOT") -->
+              <!-- CURRENT SITE KEY FOR KETTIE KLOTHING (PTY) LTD                                                    -->
+              <!-- ================================================================================================= -->
 
               <div class="form__group">
                 <div
                   class="g-recaptcha"
-                  data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
+                  data-sitekey="6LfHvXUrAAAAAK8zOIxml8jwPQvE-EFA_R52j_S_"
                   data-theme="light"
                 ></div>
               </div>
 
-              <!-- ------------------------------ -->
-              <!-- FIXME:  SIGN UP BUTTON  FIXME: -->
-              <!-- ------------------------------ -->
+              <!-- ================================== -->
+              <!-- FORM 2 (CATALOGUE) - SIGNUP BUTTON -->
+              <!-- ================================== -->
 
-              <input type="submit" value="sign up" class="btn solid" />
+              <input type="submit" value="submit" class="btn solid" />
             </form>
-
-            <!-- ----------------------------------------------------------------------------------------------- -->
-            <!--                          FIXME:  END OF FORM SECTION  FIXME:                                    -->
-            <!-- ----------------------------------------------------------------------------------------------- -->
           </div>
         </div>
 
-        <!-- ------------------------------------ -->
-        <!-- TODO:  IMAGES / THEME SECTION  TODO: -->
-        <!-- ------------------------------------ -->
+        <!-- ====================================== -->
+        <!-- TODO: PANEL SECTIONS - IMAGES & THEMES -->
+        <!-- ====================================== -->
 
         <div class="panels-container">
           <!-- -------------------------- -->
