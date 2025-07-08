@@ -31,6 +31,30 @@
   --color-YouTube: #ff0000;
   --color-WhatsApp: #25d366;
   --color-Telegram: #0088cc;
+  /* ------------------------------------------------ */
+  /* RESELLER / CATALOGUE SIGNUP SECTION COLOR SCHEME */
+  /* ------------------------------------------------ */
+  --color-resellers-background: #dad7cd;
+  --color-resellers-background-gradient-1: #a3b18a;
+  --color-resellers-background-gradient-2: #588157;
+  --color-resellers-form-title: #588157;
+  --color-resellers-form-popi-and-privacy-text: #588157;
+  --color-resellers-form-input-field-background: #ffffff;
+  --color-resellers-form-input-field-placeholder: #000000;
+  --color-resellers-form-input-field-icons: #588157;
+  --color-resellers-form-input-field-text: #000000;
+  --color-resellers-form-checkbox-background: #ffffff;
+  --color-resellers-form-checkbox-border-normal: #588157;
+  --color-resellers-form-checkbox-border-focussed: #588157;
+  --color-resellers-form-checkbox-check-mark-checked: #588157;
+  --color-resellers-form-checkbox-disabled: #959495;
+  --color-resellers-form-submit-button-background: #000000;
+  --color-resellers-form-submit-button-text: #ffffff;
+  --color-resellers-panel-content-header: #000000;
+  --color-resellers-panel-content-text: #ffffff;
+  --color-resellers-panel-button-background: #000000;
+  --color-resellers-panel-button-border: #ffffff;
+  --color-resellers-panel-button-text: #dad7cd;
   /* ------ */
   /* FOOTER */
   /* ------ */
@@ -170,7 +194,6 @@ header {
   justify-content: space-between;
   padding: 1.5rem 10rem;
   transition: 0.5s ease;
-  /* background: #1b1b1b; */
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -349,8 +372,6 @@ section {
 .home .content h1 {
   font-size: 2.2rem;
   font-weight: 700;
-  /* text-transform: uppercase; */
-  /* letter-spacing: 0.3rem; */
   line-height: 2.2rem;
   margin-bottom: 1rem;
 }
@@ -475,7 +496,6 @@ section {
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    /* box-shadow: 0 5px 25px rgb(1 1 1 / 20%); */
     box-shadow: var(--color-box-shadow-01);
   }
 
@@ -611,35 +631,6 @@ section {
 /* RESELLERS - DUAL SIGNUP SECTION - BECOME AS RESELLER OR GET OUR CATALOGUE */
 /* ========================================================================= */
 
-:root {
-  /* ------------------------------------------------ */
-  /* RESELLER / CATALOGUE SIGNUP SECTION COLOR SCHEME */
-  /* ------------------------------------------------ */
-  --color-resellers-background: #dad7cd;
-  --color-resellers-background-gradient-1: #a3b18a;
-  --color-resellers-background-gradient-2: #588157;
-  /* --color-resellers-form-title: #344e41; */
-  --color-resellers-form-title: #588157;
-  /* --color-resellers-form-popi-and-privacy-text: #344e41; */
-  --color-resellers-form-popi-and-privacy-text: #588157;
-  --color-resellers-form-input-field-background: #ffffff;
-  --color-resellers-form-input-field-placeholder: #000000;
-  --color-resellers-form-input-field-icons: #588157;
-  --color-resellers-form-input-field-text: #000000;
-  --color-resellers-form-checkbox-background: #ffffff;
-  --color-resellers-form-checkbox-border-normal: #588157;
-  --color-resellers-form-checkbox-border-focussed: #588157;
-  --color-resellers-form-checkbox-check-mark-checked: #588157;
-  --color-resellers-form-checkbox-disabled: #959495;
-  --color-resellers-form-submit-button-background: #000000;
-  --color-resellers-form-submit-button-text: #ffffff;
-  --color-resellers-panel-content-header: #dad7cd;
-  --color-resellers-panel-content-text: #ffffff;
-  --color-resellers-panel-button-background: #000000;
-  --color-resellers-panel-button-border: #ffffff;
-  --color-resellers-panel-button-text: #dad7cd;
-}
-
 .resellers__signup__section {
   position: relative;
   top: 10rem;
@@ -650,8 +641,6 @@ section {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  /* padding: 2rem 0rem 0rem 0rem; */
-  /* border: 1px solid green; */
 }
 
 @media screen and (max-width: 830px) {
@@ -675,15 +664,12 @@ section {
 .resellers__signup__container {
   position: relative;
   margin: 2rem 0.25rem 2rem 0.25rem;
-  /* width: 100%; */
   width: 95vw;
-  /* min-height: 100vh; */
   height: 100vh;
   background-color: var(--color-resellers-background);
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow-04);
-  /* border: 1px solid green; */
 }
 
 /* SET THE CONTAINER (BEFORE) - DOUBLE THE SIZE OF THE ORiGINAL CONTAINER */
@@ -719,7 +705,6 @@ section {
   top: 0;
   left: 0;
   border-radius: 0.5rem;
-  /* border: 5px solid red; */
 }
 
 /* ONLY ELEMENTS WITHIN THE FORMS CONTAINER (INPUT, CLEAR, SUBMIT) */
@@ -734,7 +719,6 @@ section {
   display: grid;
   grid-template-columns: 1fr;
   z-index: 5;
-  /* border: 5px solid red; */
 }
 
 /* -------------------------------- */
@@ -892,7 +876,6 @@ section {
   max-width: 30rem;
   width: 100%;
   border-radius: 1rem;
-  /* border: 1px solid red; */
 }
 
 .resellers__signup__container .form__group__double {
@@ -903,12 +886,11 @@ section {
   max-width: 30rem;
   width: 100%;
   border-radius: 1rem;
-  /* border: 1px solid red; */
 }
 
-.resellers__signup__container label .label__strong {
+/* .resellers__signup__container label .label__strong {
   color: purple;
-}
+} */
 
 /* --------------------- */
 /* CHECKBOX - INPUT TYPE */
@@ -916,7 +898,6 @@ section {
 
 .resellers__signup__container .checkbox__option {
   width: 100%;
-  /* font-size: 0.95rem; */
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.3;
@@ -924,7 +905,6 @@ section {
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
-  /* gap: 1.5rem; */
   gap: 1.5rem;
   margin: 1rem 0rem 0rem 0rem;
   cursor: pointer;
@@ -940,7 +920,7 @@ section {
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: orange;
+  /* background-color: orange; */
   /* Not removed via appearance */
   margin: 0;
 }
@@ -955,7 +935,7 @@ section {
   background-color: var(--color-resellers-form-checkbox-background);
   margin: 0;
   font: inherit;
-  color: orange;
+  /* color: orange; */
   width: 1.5rem;
   height: 1.5rem;
   border: 0.2rem solid var(--color-resellers-form-checkbox-border-normal);
@@ -1048,9 +1028,9 @@ section {
   transform: scale(1.05);
 }
 
-/* ---------------------------------------------- */
-/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
-/* ---------------------------------------------- */
+/* ====================================== */
+/* TODO: STYLING - GOOGLE RECAPTCHA TODO: */
+/* ====================================== */
 
 /* .shopper__registration__form__group .g-recaptcha {
   width: 100%;
@@ -1066,9 +1046,9 @@ section {
   -webkit-transform-origin: 0 0;
 } */
 
-/* --------------------------------------------------------------------------------------------------------- */
-/* FIXME:TODO:FIXME:  JAVASCRIPT TO MAKE GOOGLE RECAPTCHA A REQUIREMENT ON FORM SUBMISSION FIXME:TODO:FIXME: */
-/* --------------------------------------------------------------------------------------------------------- */
+/* ================================================================================ */
+/* TODO: JAVASCRIPT TO MAKE GOOGLE RECAPTCHA A REQUIREMENT ON FORM SUBMISSION TODO: */
+/* ================================================================================ */
 
 /* #g-recaptcha-responses .shopper__registration__form__group {
   display: block !important;
@@ -1097,34 +1077,10 @@ section {
 .resellers__signup__container .image {
   margin: 1rem 0rem 0rem 0rem;
   padding: 1rem 1rem 1rem 1rem;
-  /* width: 100%; */
   width: 70%;
-  /* height: 50%; */
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
-  /* border: 1px solid red; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
-
-/* .resellers__signup__container .image img {
-  width: 5rem;
-  height: 5rem;
-} */
-
-/* @media screen and (max-width: 1920px) {
-  .resellers__signup__container .image {
-    margin: -20rem 0rem 0rem 0rem;
-  }
-}
-
-@media screen and (max-width: 1660px) {
-  .resellers__signup__container .image {
-    margin: -20rem 0rem 0rem 0rem;
-    padding: 0rem 0rem 0rem 0rem;
-  }
-} */
 
 /* ------------------------------------------------- */
 /* MAIN PANEL CONTAINER (HOLDING ALL PANEL ELEMENTS) */
@@ -1147,13 +1103,10 @@ section {
 .resellers__signup__container .panel {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   justify-content: center;
-  /* align-items: flex-end; */
   align-items: center;
   text-align: center;
   z-index: 6;
-  /* border: 1px solid red; */
 }
 
 /* ---------------------- */
@@ -1163,7 +1116,6 @@ section {
 .resellers__signup__container .left-panel {
   pointer-events: all;
   padding: 3rem 17% 2rem 12%;
-  /* border: 1px solid purple; */
 }
 
 /* ----------------------- */
@@ -1173,7 +1125,6 @@ section {
 .resellers__signup__container .right-panel {
   pointer-events: none;
   padding: 3rem 12% 2rem 17%;
-  /* border: 1px solid Orange; */
 }
 
 /* ----------------------------------- */
@@ -1204,7 +1155,6 @@ section {
   font-size: 1.3rem;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
-  /* border: 1px solid greenyellow; */
 }
 
 /* ----------------------------------- */
@@ -1394,6 +1344,7 @@ section {
     min-height: 800px;
     height: 100vh;
   }
+
   .resellers__signup__container .reseller__signup {
     width: 100%;
     top: 95%;
@@ -1442,7 +1393,6 @@ section {
     height: 1500px;
     transform: translateX(-50%);
     left: 30%;
-    /* bottom: 68%; */
     bottom: 77%;
     right: initial;
     top: initial;
@@ -1451,7 +1401,6 @@ section {
 
   .resellers__signup__container.sign-up-mode:before {
     transform: translate(-50%, 100%);
-    /* bottom: 32%; */
     bottom: 25%;
     right: initial;
   }
@@ -1472,7 +1421,6 @@ section {
   }
 
   .resellers__signup__container.sign-up-mode .reseller__signup {
-    /* top: 5%; */
     top: 3%;
     transform: translate(-50%, 0);
   }
@@ -1503,7 +1451,7 @@ section {
 }
 
 /* ------------------------------------ */
-/* FIXME:  FINAL MEDIA QUERY - CHECKBOX */
+/* LEFT AND RIGHT PANEL - MEDIA QUERIES */
 /* ------------------------------------ */
 
 @media screen and (max-width: 850px) {
@@ -1532,14 +1480,12 @@ section {
     text-align: center;
   }
 
-  /* -------------------- */
+  /* ---------------------- */
   /* PANEL CONTAINER (LEFT) */
   /* ---------------------- */
 
   .resellers__signup__container .left-panel {
-    /* padding: 3rem 17% 2rem 12%; */
     padding: 3rem 8% 2rem 3%;
-    /* margin: -4rem 0rem 0rem 0rem; */
     margin: -4rem 0rem 0rem 0rem;
   }
 
@@ -1548,174 +1494,198 @@ section {
   /* ----------------------- */
 
   .resellers__signup__container .right-panel {
-    /* padding: 3rem 12% 2rem 17%; */
     padding: 3rem 8% 2rem 3%;
     margin: 1rem 0rem 0rem 0rem;
   }
 }
 
-@media screen and (max-width: 760px) {
-  .resellers__signup__container .image {
-    width: 200px;
+@media screen and (max-width: 792px) {
+  .resellers__signup__container .left-panel p {
+    font-size: 1.2rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .resellers__signup__container .right-panel p {
+    font-size: 1.2rem;
+    padding: 1rem 0rem 1rem 0rem;
   }
 
   .resellers__signup__container .panel h3 {
-    margin: -1rem 0rem 0.75rem 0rem;
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .resellers__signup__container .panel p {
-    margin: 0rem 0rem 0.5rem 0rem;
-    font-size: 1.05rem;
-    padding: 0.5rem 1rem 1rem 0.5rem;
-  }
-
-  .resellers__signup__container .btn.transparent {
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    width: 10rem;
-    height: 3rem;
-    font-size: 1.3rem;
-    text-align: center;
+    font-size: 1.6rem;
   }
 }
 
-@media screen and (max-width: 665px) {
-  .resellers__signup__container .image {
-    width: 200px;
+@media screen and (max-width: 764px) {
+  .resellers__signup__container .left-panel p {
+    margin-right: -8rem;
   }
 
-  .resellers__signup__container .panel h3 {
-    margin: -0.5rem 0rem 0.75rem 0rem;
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .resellers__signup__container .panel p {
-    margin: 0rem 0rem 0.5rem 0rem;
-    font-size: 0.95rem;
-    padding: 0.5rem 1rem 1rem 0.5rem;
+  .resellers__signup__container .right-panel p {
+    margin-right: -8rem;
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 660px) {
   .resellers__signup__container .image {
-    width: 180px;
+    display: none;
+  }
+
+  .resellers__signup__container .left-panel p {
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: -6rem;
+  }
+
+  .resellers__signup__container .right-panel p {
+    margin-right: -6rem;
   }
 
   .resellers__signup__container .panel h3 {
-    margin: -0.5rem 0rem 0.5rem 0rem;
-    font-size: 1.65rem;
-    text-align: center;
+    margin-top: -2rem;
   }
+}
 
-  .resellers__signup__container .panel p {
-    margin: 0rem 0rem 0.25rem 0rem;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem 1rem 0.5rem;
+@media screen and (max-width: 600px) {
+  .resellers__signup__container .panel h3 {
+    margin-top: -3rem;
   }
 }
 
 @media screen and (max-width: 570px) {
-  .resellers__signup__container .image {
-    width: 140px;
+  .resellers__signup__container .left-panel p {
+    margin-right: -3rem;
+  }
+
+  .resellers__signup__container .right-panel p {
+    margin-right: -3rem;
+  }
+
+  .resellers__signup__container:before {
+    bottom: 78%;
+  }
+
+  .resellers__signup__container.sign-up-mode:before {
+    bottom: 24%;
+  }
+
+  .resellers__signup__container.sign-up-mode .reseller__signup {
+    top: 1%;
   }
 }
 
 @media screen and (max-width: 506px) {
-  .resellers__signup__container .image {
-    width: 120px;
+  .resellers__signup__container .panel h3 {
+    margin-top: -1rem;
   }
 
-  .resellers__signup__container .reseller__input__field {
-    margin: 0.5rem 0rem 0.5rem -2.75rem;
-    max-width: 21rem;
+  .resellers__signup__container:before {
+    bottom: 77%;
   }
+}
 
-  .resellers__signup__container .btn {
-    margin: 0rem 0rem 1.5rem -2.75rem;
-    max-width: 21rem;
-    font-size: 1.3rem;
-  }
-
-  .resellers__signup__container .reseller__popi__privacy__statement {
-    margin: 0rem 0rem 1.5rem -2.75rem;
-    max-width: 21rem;
-    font-size: 0.85rem;
-  }
-
-  .resellers__signup__container .title {
-    margin: 0rem 0rem 1rem -2.75rem;
-    font-size: 2rem;
-    max-width: 21rem;
-    text-align: center;
-  }
-
-  .resellers__signup__container .social-text {
+@media screen and (max-width: 450px) {
+  .resellers__signup__container .left-panel p {
     font-size: 1.1rem;
-    margin: -1.25rem 0rem 0rem -2.75rem;
   }
 
-  .resellers__signup__container .social-icon {
-    margin: -0.25rem 2.25rem 0.5rem -0.75rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    border-radius: 50%;
-    border: 1px solid var(--color-shopper-login-page-social-media-icons-border);
-    color: var(--color-shopper-login-page-social-media-icons);
-    transition: 0.3s;
+  .resellers__signup__container .right-panel p {
+    font-size: 1.1rem;
   }
 
   .resellers__signup__container .panel h3 {
-    margin: -1rem 0rem 1rem -2.75rem;
-    font-size: 1.6rem;
-    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .resellers__signup__container .left-panel p {
+    font-size: 1rem;
+    margin-right: -2rem;
   }
 
-  .resellers__signup__container .panel p {
-    margin: 0rem 0rem 1rem -2.75rem;
-    font-size: 0.85rem;
-    padding: 0.5rem 1rem 1rem 0.5rem;
+  .resellers__signup__container .right-panel p {
+    font-size: 1rem;
+    margin-right: -2rem;
   }
 
-  .resellers__signup__container .btn.transparent {
-    margin: 0rem 0rem 0rem -2.75rem;
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    width: 10rem;
-    height: 3rem;
-    font-size: 1.3rem;
+  .resellers__signup__container .panel h3 {
+    font-size: 1.4rem;
   }
 
-  .resellers__signup__container .form__group {
-    margin: 0.5rem 0rem 1rem -2.75rem;
-    padding: 0rem 0rem 0rem 0rem;
-    max-width: 21rem;
+  .resellers__signup__container:before {
+    bottom: 78%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .resellers__signup__container .reseller__signup {
+    top: 98%;
   }
 
-  .resellers__signup__container .form__group__double {
-    margin: 0.5rem 0rem 1rem -2.75rem;
-    padding: 0rem 0rem 0rem 0rem;
-    max-width: 21rem;
+  .resellers__signup__container:before {
+    bottom: 77%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .resellers__signup__container .reseller__signup {
+    top: 96%;
+  }
+
+  .resellers__signup__container .left-panel p {
+    font-size: 0.95rem;
+  }
+
+  .resellers__signup__container .right-panel p {
+    font-size: 0.95rem;
+  }
+
+  .resellers__signup__container .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .resellers__signup__container:before {
+    bottom: 74%;
+  }
+
+  .resellers__signup__container.sign-up-mode:before {
+    bottom: 23%;
+  }
+
+  .resellers__signup__container.sign-up-mode .reseller__signup {
+    top: 3%;
+  }
+
+  .resellers__signup__container .btn {
+    width: 25rem;
+  }
+
+  .resellers__signup__container .title {
+    font-size: 1.5rem;
+  }
+
+  .resellers__signup__container .reseller__popi__privacy__statement {
+    font-size: 1.1rem;
   }
 
   .resellers__signup__container .checkbox__option {
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+    font-size: 1.1rem;
+    line-height: 1.1;
   }
 }
 
-@media screen and (max-width: 440px) {
-  .resellers__signup__container .image {
-    width: 100px;
+@media screen and (max-width: 320px) {
+  .resellers__signup__container .reseller__popi__privacy__statement {
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 408px) {
-  .resellers__signup__container .image {
-    /* width: 75px; */
-    display: none;
+@media screen and (max-width: 300px) {
+  .resellers__signup__container .reseller__signup {
+    top: 97%;
+  }
+
+  .resellers__signup__container .reseller__popi__privacy__statement {
+    font-size: 0.9rem;
   }
 }
 
@@ -1827,7 +1797,6 @@ footer {
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
-  /* text-transform: uppercase; */
   width: 100%;
   padding: 0rem 1rem 0rem 1rem;
   text-align: center;
@@ -1954,31 +1923,41 @@ footer {
   transform: translate(0, -0.4rem);
 }
 
+/* ---------------------------------------------- */
 /* IMPLEMENT BACKGROUND COLOR ON HOVER - FACEBOOK */
+/* ---------------------------------------------- */
 
 .footer__profile__social__media__links ul li:nth-child(1) a:hover {
   background-color: var(--color-00-main-black);
 }
 
+/* ----------------------------------------------- */
 /* IMPLEMENT BACKGROUND COLOR ON HOVER - INSTAGRAM */
+/* ----------------------------------------------- */
 
 .footer__profile__social__media__links ul li:nth-child(2) a:hover {
   background-color: var(--color-00-main-black);
 }
 
+/* ------------------------------------------------- */
 /* IMPLEMENT BACKGROUND COLOR ON HOVER - TWITTER / X */
+/* ------------------------------------------------- */
 
 .footer__profile__social__media__links ul li:nth-child(3) a:hover {
   background-color: var(--color-00-main-black);
 }
 
+/* -------------------------------------------- */
 /* IMPLEMENT BACKGROUND COLOR ON HOVER - TIKTOK */
+/* -------------------------------------------- */
 
 .footer__profile__social__media__links ul li:nth-child(4) a:hover {
   background-color: var(--color-00-main-black);
 }
 
+/* --------------------------------------------- */
 /* IMPLEMENT BACKGROUND COLOR ON HOVER - YOUTUBE */
+/* --------------------------------------------- */
 
 .footer__profile__social__media__links ul li:nth-child(5) a:hover {
   background-color: var(--color-00-main-black);
@@ -1997,7 +1976,6 @@ footer {
 
 .footer__column__container__all ul li {
   margin: 0rem 0rem 0rem 0rem;
-  /* border: 1px solid red; */
 }
 
 /* SITEMAP - COLUMN HEADERS & LINKS (GENERAL STYLING) */
@@ -2486,6 +2464,7 @@ li.footer__column__group__name {
 
   .footer__company__profile__description {
     font-size: 1rem;
+    text-align: center;
     margin: 3rem 0.5rem 3rem 0.5rem;
   }
 
@@ -2520,6 +2499,67 @@ li.footer__column__group__name {
 
   .footer__bottom__policies a {
     margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+  }
+
+  /* ------------------------------- */
+  /* FONT SIZES (ON SMALLER SCREENS) */
+  /* ------------------------------- */
+
+  .footer__company__profile__description p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  li.footer__column__group__name {
+    font-size: 1.4rem;
+  }
+
+  .footer__column__group__item {
+    font-size: 1.3rem;
+  }
+
+  .footer__column__group__header li a {
+    font-size: 1.3rem;
+  }
+
+  .footer__column__group__header li a.combos__header {
+    font-size: 1.4rem;
+  }
+
+  .footer__column__group__header li a.gifts__header {
+    font-size: 1.4rem;
+  }
+
+  .footer__column__group__email p,
+  .footer__column__group__fax p,
+  .footer__column__group__whatsapp p {
+    font-size: 1.3rem;
+  }
+
+  .footer__column__group__fax img,
+  .footer__column__group__whatsapp img,
+  .footer__column__group__email img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .footer__profile__social__media__links ul li .fab {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+
+  .footer__profile__social__media__links ul li a {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .copy__right span,
+  .footer__bottom__policies a {
+    font-size: 1.4rem;
+  }
+
+  .footer__bottom__policies a {
+    margin: 0rem 0.5rem 0rem 1.5rem;
   }
 }
 
@@ -2558,7 +2598,7 @@ li.footer__column__group__name {
   }
 
   .footer__profile__social__media__links ul li {
-    margin: 0rem 0.4rem 0rem 0.4rem;
+    margin: 3rem 0.4rem 1rem 0.4rem;
   }
 
   .footer__company__profile__container img {
@@ -2587,6 +2627,19 @@ li.footer__column__group__name {
 
   .footer__column__container__all {
     margin: 1.5rem 0rem 0rem -2rem;
+  }
+
+  .footer__profile__social__media__links ul li a {
+    margin: 0rem 0.2rem 0rem 0.2rem;
+  }
+
+  .copy__right span,
+  .footer__bottom__policies a {
+    font-size: 1.2rem;
+  }
+
+  .footer__bottom__policies a {
+    margin: 0rem 0.5rem 0rem 0.5rem;
   }
 }
 
@@ -3057,7 +3110,6 @@ label.order__form__checkbox__option {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 2rem 2rem 2rem 0.1rem;
-    /* border: 1px solid red; */
   }
 
   .order__form__section__element select {
