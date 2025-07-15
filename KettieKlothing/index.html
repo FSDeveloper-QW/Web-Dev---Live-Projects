@@ -145,6 +145,10 @@
     <!-- ============================================================================= -->
   </head>
   <body>
+    <!-- ========================================== -->
+    <!-- TODO: HEADER : NAVIGATION & SLIDER SECTION -->
+    <!-- ========================================== -->
+
     <!-- ===================== -->
     <!-- STICKY NAVIGATION BAR -->
     <!-- ===================== -->
@@ -165,13 +169,13 @@
       <div class="menu-btn"></div>
       <div class="navigation">
         <div class="navigation-items">
-          <a href="#">women</a>
-          <a href="#">men</a>
-          <a href="#">kids</a>
+          <a href="#women">women</a>
+          <a href="#men">men</a>
+          <a href="#kids">kids</a>
+          <a href="#gear">gear</a>
+          <a href="#tech">tech</a>
           <a href="#">combos</a>
           <a href="#">gifts</a>
-          <a href="#">gear</a>
-          <a href="#">tech</a>
           <a href="#resellers">resellers</a>
           <a href="#contact">contact</a>
         </div>
@@ -507,561 +511,1054 @@
       </div>
     </section>
 
-    <!-- ======================= -->
-    <!-- CATEGORY 01 - WOMEN     -->
-    <!-- ======================= -->
+    <!-- ======================================================= -->
+    <!-- TODO: CALL TO ACTION SECTIONS (CLICKABLE CATEGORY TAGS) -->
+    <!-- ======================================================= -->
 
-    <!-- ======================= -->
-    <!-- CATEGORY 02 - MEN       -->
-    <!-- ======================= -->
+    <!-- ============================================ -->
+    <!-- CATEGORY 01 - WOMEN (CALL TO ACTION SECTION) -->
+    <!-- ============================================ -->
 
-    <!-- ======================= -->
-    <!-- CATEGORY 03 - KIDS      -->
-    <!-- ======================= -->
+    <div class="new__section__container">
+      <!-- NEW SECTION - TITLE -->
 
-    <!-- ======================= -->
-    <!-- CATEGORY 04 - COMBOS    -->
-    <!-- ======================= -->
+      <!-- <div class="new__section__title">
+        <h5>Top Title Here</h5>
+      </div> -->
 
-    <!-- ======================= -->
-    <!-- CATEGORY 05 - GIFTS     -->
-    <!-- ======================= -->
+      <!-- NEW SECTION - SUB-TITLE -->
 
-    <!-- ======================= -->
-    <!-- CATEGORY 06 - GEAR      -->
-    <!-- ======================= -->
+      <!-- <div class="new__section__sub__title">
+        <p>(Sub-Title Here)</p>
+      </div> -->
 
-    <!-- ======================= -->
-    <!-- CATEGORY 07 - TECH      -->
-    <!-- ======================= -->
+      <!-- NEW SECTION - BUTTONS / DOWNLOADABLE BROCHURE / LINK TO NEW SECTION -->
 
-    <!-- ========================================================================= -->
-    <!-- RESELLERS - DUAL SIGNUP SECTION - BECOME AS RESELLER OR GET OUR CATALOGUE -->
-    <!-- ========================================================================= -->
+      <!-- <div class="new__section__buttons__container">
+        <div class="new__section__button">
+          <a href="" target="_blank">download brochure</a>
+        </div>
+      </div> -->
 
-    <div id="resellers" class="resellers__signup__section">
-      <div class="resellers__signup__container">
-        <!-- ============================== -->
-        <!-- TODO: FORM 1 - RESELLER SIGNUP -->
-        <!-- ============================== -->
-        <div class="reseller__forms__container">
-          <div class="reseller__signup">
-            <form
-              action="https://formspree.io/f/xkgbyeoy"
-              class="reseller__signup__form"
-              name="RESELLER SIGNUP"
-              method="post"
-            >
-              <!-- ========================= -->
-              <!-- FORM 1 (RESELLER) - TITLE -->
-              <!-- ========================= -->
+      <!-- NEW SECTION - CATEGORY 01 - WOMAN (CALL TO ACTION) -->
 
-              <h2 class="title">
-                become a reseller<br />in your regional area
-              </h2>
+      <div class="cta__clickable__tags__container__01">
+        <!-- CALL TO ACTION - TITLE 01 -->
 
-              <!-- ============================================== -->
-              <!-- FORM 1 (RESELLER) - POPI AND PRIVACY STATEMENT -->
-              <!-- ============================================= -->
-
-              <div class="reseller__popi__privacy__statement">
-                <p>
-                  view our<a
-                    href="pdf/kettieklothing_popi_policy.pdf"
-                    target="_blank"
-                    ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
-                  >and<a
-                    href="pdf/kettieklothing_privacy_policy.pdf"
-                    target="_blank"
-                    ><strong>&nbsp;&nbsp;PRIVACY&nbsp;&nbsp;</strong></a
-                  >Policies.
-                </p>
-              </div>
-
-              <!-- ================================================ -->
-              <!-- FORM 1 (RESELLER) - INPUT FIELD (NAME & SURNAME) -->
-              <!-- ================================================ -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-user"></i>
-                <input
-                  id="reseller-name"
-                  type="text"
-                  placeholder="name & surname *"
-                  value=""
-                  name="Name & Surname of Reseller"
-                  minlength="3"
-                  maxlength="75"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-
-              <!-- ============================================== -->
-              <!-- FORM 1 (RESELLER) - INPUT FIELD (MOBILE PHONE) -->
-              <!-- ============================================== -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-mobile"></i>
-                <input
-                  id="reseller-mobile"
-                  type="tel"
-                  value=""
-                  name="Mobile Number of Reseller"
-                  placeholder="mobile number *"
-                  minlength="3"
-                  maxlength="13"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-
-              <!-- ======================================= -->
-              <!-- FORM 1 (RESELLER) - INPUT FIELD (EMAIL) -->
-              <!-- ======================================= -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-envelope"></i>
-                <input
-                  id="reseller-email"
-                  type="email"
-                  value=""
-                  name="Email Address of Reseller"
-                  placeholder="email address *"
-                  minlength="3"
-                  maxlength="75"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-
-              <!-- ======================================== -->
-              <!-- FORM 1 (RESELLER) - INPUT FIELD (REGION) -->
-              <!-- ======================================== -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-map-marker"></i>
-                <select
-                  id="reseller-region"
-                  name="Reseller Province & Regional Area"
-                  required
-                >
-                  <option value="" selected>Select selling region *</option>
-
-                  <optgroup label="EASTERN CAPE">
-                    <option id="ec-amatola-region" value="Amatola Region">
-                      Amatola Region
-                    </option>
-                    <option id="ec-northern-region" value="Northern Region">
-                      Northern Region
-                    </option>
-                    <option id="ec-western-region" value="Western Region">
-                      Western Region
-                    </option>
-                    <option id="ec-wild-coast" value="Wild Coast">
-                      Wild Coast
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="FREE STATE">
-                    <option
-                      id="fs-eastern-free-state"
-                      value="Eastern Free State"
-                    >
-                      Eastern Free State
-                    </option>
-                    <option id="fs-goldfields" value="Goldfields">
-                      Goldfields
-                    </option>
-                    <option
-                      id="fs-northern-free-state"
-                      value="Northern Free State"
-                    >
-                      Northern Free State
-                    </option>
-                    <option id="fs-transgariep" value="Transgariep">
-                      Transgariep
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="GAUTENG">
-                    <option id="gauteng-central" value="Central Gauteng">
-                      Central Gauteng
-                    </option>
-                    <option id="gauteng-eastern" value="Eastern Gauteng">
-                      Eastern Gauteng
-                    </option>
-                    <option id="gauteng-northern" value="Northern Gauteng">
-                      Northern Gauteng
-                    </option>
-                    <option id="gauteng-southern" value="Southern Gauteng">
-                      Southern Gauteng
-                    </option>
-                    <option id="gauteng-western" value="Western Gauteng">
-                      Western Gauteng
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="KWAZULU-NATAL">
-                    <option id="kzn-battlefields" value="Battlefields">
-                      Battlefields
-                    </option>
-                    <option id="kzn-elephant-coast" value="Elephant Coast">
-                      Elephant Coast
-                    </option>
-                    <option
-                      id="kzn-durban-ethekwiniR25"
-                      value="Durban Ethekwini"
-                    >
-                      Durban (Ethekwini)
-                    </option>
-                    <option id="kzn-midlands" value="Midlands">Midlands</option>
-                    <option id="kzn-north-coast" value="North Coast">
-                      North Coast
-                    </option>
-                    <option id="kzn-south-coast" value="South Coast">
-                      South Coast
-                    </option>
-                    <option id="kzn-drakensberg" value="Drakensberg">
-                      Drakensberg (Ukhahlamba)
-                    </option>
-                    <option id="kzn-zululand" value="Zululand">Zululand</option>
-                  </optgroup>
-
-                  <optgroup label="LIMPOPO">
-                    <option id="lp-capricorn" value="Capricorn">
-                      Capricorn
-                    </option>
-                    <option id="lp-olifants-region" value="Olifants Region">
-                      Olifants Region
-                    </option>
-                    <option id="lp-soutpansberg" value="Soutpansberg">
-                      Soutpansberg
-                    </option>
-                    <option id="lp-waterberg" value="Waterberg">
-                      Waterberg
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="MPUMALANGA">
-                    <option id="mp-escarpment" value="Escarpment">
-                      Escarpment (Nkangala)
-                    </option>
-                    <option id="mp-grass-wetlands" value="Grass and Wetlands">
-                      Grass and Wetlands
-                    </option>
-                    <option id="mp-highveld-cosmos" value="Highveld and Cosmos">
-                      Highveld and Cosmos
-                    </option>
-                    <option id="mp-ehlanzeni-lowveld" value="Ehlanzeni Lowveld">
-                      Ehlanzeni Lowveld
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="NORTH WEST">
-                    <option id="nw-bophirima" value="Bophirima">
-                      Bophirima
-                    </option>
-                    <option id="nw-central-region" value="Central Region">
-                      Central Region
-                    </option>
-                    <option id="nw-eastern-region" value="Eastern Region">
-                      Eastern Region
-                    </option>
-                    <option id="nw-southern-region" value="Southern Region">
-                      Southern Region
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="NORTHERN CAPE">
-                    <option id="nc-diamond-fields" value="Diamond Fields">
-                      Diamond Fields
-                    </option>
-                    <option id="nc-green-kalahari" value="Green Kalahari">
-                      Green Kalahari
-                    </option>
-                    <option id="nc-hantam-karoo" value="Hantam Karoo">
-                      Hantam Karoo
-                    </option>
-                    <option id="nc-kalahari" value="Kalahari">Kalahari</option>
-                    <option id="nc-namaqualand" value="Namaqualand">
-                      Namaqualand
-                    </option>
-                    <option id="nc-upper-karoo" value="Upper Karoo">
-                      Upper Karoo
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="WESTERN CAPE">
-                    <option id="wc-cape-peninsula" value="Cape Peninsula">
-                      Cape Peninsula
-                    </option>
-                    <option
-                      id="wc-breede-river-valley"
-                      value="Breede River Valley"
-                    >
-                      Breede River Valley
-                    </option>
-                    <option id="wc-cape-winelands" value="Cape Winelands">
-                      Cape Winelands
-                    </option>
-                    <option id="wc-central-karoo" value="Central Karoo">
-                      Central Karoo
-                    </option>
-                    <option id="wc-garden-route" value="Garden Route">
-                      Garden Route
-                    </option>
-                    <option id="wc-klein-karoo" value="Klein Karoo">
-                      Klein Karoo
-                    </option>
-                    <option id="wc-overberg" value="Overberg">Overberg</option>
-                    <option id="wc-west-coast" value="West Coast">
-                      West Coast
-                    </option>
-                  </optgroup>
-                </select>
-              </div>
-
-              <!-- ===================================================================================== -->
-              <!-- FORM 1 (RESELLER) - T's & C's (ACCEPT PRIVACY / ACCEPT CATALOGUE & DISCOUNT VOUCHERS) -->
-              <!-- ===================================================================================== -->
-
-              <div class="form__group__double">
-                <label class="checkbox__option"
-                  ><input type="checkbox" name="checkbox" required />I accept
-                  the company's POPI and PRIVACY policies to protect my personal
-                  information *</label
-                >
-                <label class="checkbox__option"
-                  ><input type="checkbox" name="checkbox" required />Add me to
-                  the mailing list to receive the product catalogue and monthly
-                  discount vouchers *</label
-                >
-              </div>
-
-              <!-- ================================================================================================ -->
-              <!-- FORM 1 (RESELLER) - TODO: GOOGLE RECAPTCHA TODO: IMPLEMENTATION (VERSION 2 - "I AM NOT A ROBOT") -->
-              <!-- CURRENT SITE KEY FOR KETTIE KLOTHING (PTY) LTD                                                  -->
-              <!-- ================================================================================================ -->
-
-              <div class="form__group">
-                <div
-                  class="g-recaptcha"
-                  data-sitekey="6LfHvXUrAAAAAK8zOIxml8jwPQvE-EFA_R52j_S_"
-                  data-theme="light"
-                ></div>
-              </div>
-
-              <!-- ================================= -->
-              <!-- FORM 1 (RESELLER) - SIGNUP BUTTON -->
-              <!-- ================================= -->
-
-              <input type="submit" value="submit" class="btn solid" />
-            </form>
-
-            <!-- =============================== -->
-            <!-- TODO: FORM 2 - CATALOGUE SIGNUP -->
-            <!-- =============================== -->
-
-            <form
-              action="https://formspree.io/f/mblywbdn"
-              class="catalogue__signup__form"
-              name="CATALOGUE SIGNUP"
-              method="post"
-            >
-              <!-- ========================== -->
-              <!-- FORM 2 (CATALOGUE) - TITLE -->
-              <!-- ========================== -->
-
-              <h2 class="title">
-                Sign up for our product<br />catalogue and discounts
-              </h2>
-
-              <!-- =============================================== -->
-              <!-- FORM 2 (CATALOGUE) - POPI AND PRIVACY STATEMENT -->
-              <!-- =============================================== -->
-
-              <div class="reseller__popi__privacy__statement">
-                <p>
-                  view our<a
-                    href="pdf/kettieklothing_popi_policy.pdf"
-                    target="_blank"
-                    ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
-                  >and<a
-                    href="pdf/kettieklothing_privacy_policy.pdf"
-                    target="_blank"
-                    ><strong>&nbsp;&nbsp;PRIVACY&nbsp;&nbsp;</strong></a
-                  >Policies.
-                </p>
-              </div>
-
-              <!-- ================================================= -->
-              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (NAME & SURNAME) -->
-              <!-- ================================================= -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-user"></i>
-                <input
-                  id="catalogue-name"
-                  type="text"
-                  placeholder="name & surname *"
-                  value=""
-                  name="Name & Surname of Reseller"
-                  minlength="3"
-                  maxlength="75"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-
-              <!-- =============================================== -->
-              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (MOBILE PHONE) -->
-              <!-- =============================================== -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-mobile"></i>
-                <input
-                  id="catalogue-mobile"
-                  type="tel"
-                  value=""
-                  name="Mobile Number of Reseller"
-                  placeholder="mobile number *"
-                  minlength="3"
-                  maxlength="13"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-
-              <!-- ======================================== -->
-              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (EMAIL) -->
-              <!-- ======================================== -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-envelope"></i>
-                <input
-                  id="catalogue-email"
-                  type="email"
-                  value=""
-                  name="Email Address of Reseller"
-                  placeholder="email address *"
-                  minlength="3"
-                  maxlength="75"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-
-              <!-- ============================================= -->
-              <!-- FORM 2 (CATALOGUE) - INPUT FIELD (BIRTH DATE) -->
-              <!-- ============================================= -->
-
-              <div class="reseller__input__field">
-                <i class="fas fa-birthday-cake"></i>
-                <input
-                  id="catalogue-birthdate"
-                  type="date"
-                  value=""
-                  name="Date of Birth"
-                  placeholder="date of birth *"
-                  min="1900-01-01"
-                  max="2099-12-31"
-                  required
-                />
-              </div>
-
-              <!-- ====================================================================================== -->
-              <!-- FORM 2 (CATALOGUE) - T's & C's (ACCEPT PRIVACY / ACCEPT CATALOGUE & DISCOUNT VOUCHERS) -->
-              <!-- ====================================================================================== -->
-
-              <div class="form__group__double">
-                <label class="checkbox__option"
-                  ><input type="checkbox" name="checkbox" required />I accept
-                  the company's POPI and PRIVACY policies to protect my personal
-                  information *</label
-                >
-                <label class="checkbox__option"
-                  ><input type="checkbox" name="checkbox" required />Add me to
-                  the mailing list to receive the product catalogue and monthly
-                  discount vouchers *</label
-                >
-              </div>
-
-              <!-- ================================================================================================= -->
-              <!-- FORM 2 (CATALOGUE) - TODO: GOOGLE RECAPTCHA TODO: IMPLEMENTATION (VERSION 2 - "I AM NOT A ROBOT") -->
-              <!-- CURRENT SITE KEY FOR KETTIE KLOTHING (PTY) LTD                                                    -->
-              <!-- ================================================================================================= -->
-
-              <div class="form__group">
-                <div
-                  class="g-recaptcha"
-                  data-sitekey="6LfHvXUrAAAAAK8zOIxml8jwPQvE-EFA_R52j_S_"
-                  data-theme="light"
-                ></div>
-              </div>
-
-              <!-- ================================== -->
-              <!-- FORM 2 (CATALOGUE) - SIGNUP BUTTON -->
-              <!-- ================================== -->
-
-              <input type="submit" value="submit" class="btn solid" />
-            </form>
-          </div>
+        <div id="women" class="cta__section__title__01">
+          <h5><strong>women</strong></h5>
+          <!-- <h6>sub-title here</h6> -->
         </div>
 
-        <!-- ====================================== -->
-        <!-- TODO: PANEL SECTIONS - IMAGES & THEMES -->
-        <!-- ====================================== -->
+        <!-- CALL TO ACTION - CLICKABLE TAGS 01 -->
+        <!-- ====== -->
+        <!-- TAG 01 -->
+        <!-- ====== -->
 
-        <div class="panels-container">
-          <!-- ========== -->
-          <!-- LEFT PANEL -->
-          <!-- ========== -->
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_woman_tops_bw.webp"
+              alt="Clickable Tag for Women's Tops"
+          /></a>
+        </div>
 
-          <div id="left-panel" class="panel left-panel">
-            <div class="content">
-              <h3>Sign up for our product<br />catalogue and discounts</h3>
-              <p>
-                Come <strong>find your true north</strong> and enjoy life and
-                the outdoors with us by signing up for our product catalogues,
-                monthly newsletters and discount vouchers. You never know, maybe
-                we'll surprise you on your birthday. To sweeten the deal, we'll
-                give you a 10% discount on your first order.
-              </p>
-              <button class="btn transparent" id="sign-up-btn">sign up</button>
+        <!-- ====== -->
+        <!-- TAG 02 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_woman_jackets_bw.webp"
+              alt="Clickable Tag for Women's Jackets"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 03 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_woman_bottoms_bw.webp"
+              alt="Clickable Tag for Women's Bottoms"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 04 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_woman_active_wear_bw.webp"
+              alt="Clickable Tag for Women's Active Wear"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 05 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_woman_shoes_bw.webp"
+              alt="Clickable Tag for Women's Shoes"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 06 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_woman_caps_bw.webp"
+              alt="Clickable Tag for Women's Headwear"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 07 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_woman_clothing_accessories_bw.webp"
+              alt="Clickable Tag for Women's Clothing Accessories"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- CATEGORY 02 - MEN (CALL TO ACTION SECTION) -->
+    <!-- ========================================== -->
+
+    <div class="new__section__container">
+      <div class="cta__clickable__tags__container__02">
+        <!-- CALL TO ACTION - TITLE 02 -->
+
+        <div id="men" class="cta__section__title__02">
+          <h5><strong>men</strong></h5>
+          <!-- <h6>sub-title here</h6> -->
+        </div>
+
+        <!-- CALL TO ACTION - CLICKABLE TAGS 02 -->
+        <!-- ====== -->
+        <!-- TAG 01 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_men_tops_bw.webp"
+              alt="Clickable Tag for Men's Tops"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 02 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_men_jackets_bw.webp"
+              alt="Clickable Tag for Men's Jackets"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 03 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_men_bottoms_bw.webp"
+              alt="Clickable Tag for Men's Bottoms"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 04 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_men_active_wear_bw.webp"
+              alt="Clickable Tag for Men's Active Wear"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 05 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_men_shoes_bw.webp"
+              alt="Clickable Tag for Men's Shoes"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 06 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_men_caps_bw.webp"
+              alt="Clickable Tag for Men's Headwear"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 07 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_men_clothing_accessories_bw.webp"
+              alt="Clickable Tag for Men's Clothing Accessories"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================== -->
+    <!-- CATEGORY 03 - KIDS (CALL TO ACTION SECTION) -->
+    <!-- =========================================== -->
+
+    <div class="new__section__container">
+      <div class="cta__clickable__tags__container__03">
+        <!-- CALL TO ACTION - TITLE 03 -->
+
+        <div id="kids" class="cta__section__title__03">
+          <h5><strong>kids</strong></h5>
+          <!-- <h6>sub-title here</h6> -->
+        </div>
+
+        <!-- CALL TO ACTION - CLICKABLE TAGS 03 -->
+        <!-- ====== -->
+        <!-- TAG 01 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_kids_tops_bw.webp"
+              alt="Clickable Tag for Kids Tops"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 02 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_kids_jackets_bw.webp"
+              alt="Clickable Tag for Kids Jackets"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 03 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_kids_bottoms_bw.webp"
+              alt="Clickable Tag for Kids Bottoms"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 04 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_kids_active_wear_bw.webp"
+              alt="Clickable Tag for Kids Active Wear"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 05 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_kids_shoes_bw.webp"
+              alt="Clickable Tag for Kids Shoes"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 06 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_kids_caps_bw.webp"
+              alt="Clickable Tag for Kids Headwear"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 07 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_kids_clothing_accessories_bw.webp"
+              alt="Clickable Tag for Kids Clothing Accessories"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================== -->
+    <!-- CATEGORY 04 - GEAR (CALL TO ACTION SECTION) -->
+    <!-- =========================================== -->
+
+    <div class="new__section__container">
+      <div class="cta__clickable__tags__container__04">
+        <!-- CALL TO ACTION - TITLE 04 -->
+
+        <div id="gear" class="cta__section__title__04">
+          <h5><strong>gear</strong></h5>
+          <!-- <h6>sub-title here</h6> -->
+        </div>
+
+        <!-- CALL TO ACTION - CLICKABLE TAGS 04 -->
+        <!-- ====== -->
+        <!-- TAG 01 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_gear_backpacks_bw.webp"
+              alt="Clickable Tag for Backpacks"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 02 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_gear_luggage_bw.webp"
+              alt="Clickable Tag for Luggage"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 03 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_gear_camping_bw.webp"
+              alt="Clickable Tag for Camping Gear"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 04 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_gear_hiking_bw.webp"
+              alt="Clickable Tag for Hiking Gear"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================== -->
+    <!-- CATEGORY 05 - TECH (CALL TO ACTION SECTION) -->
+    <!-- =========================================== -->
+
+    <div class="new__section__container">
+      <div class="cta__clickable__tags__container__05">
+        <!-- CALL TO ACTION - TITLE 05 -->
+
+        <div id="tech" class="cta__section__title__05">
+          <h5><strong>tech</strong></h5>
+          <!-- <h6>sub-title here</h6> -->
+        </div>
+
+        <!-- CALL TO ACTION - CLICKABLE TAGS 05 -->
+        <!-- ====== -->
+        <!-- TAG 01 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_tech_watches_bw.webp"
+              alt="Clickable Tag for Fitness Watches"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 02 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_tech_trackers_bw.webp"
+              alt="Clickable Tag for Activity Trackers"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 03 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_tech_cameras_bw.webp"
+              alt="Clickable Tag for Cameras"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 04 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_tech_drones_bw.webp"
+              alt="Clickable Tag for Drones"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 05 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_tech_speakers_bw.webp"
+              alt="Clickable Tag for Bluetooth Speakers"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 06 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_tech_headphones_bw.webp"
+              alt="Clickable Tag for Over-Ear Headphones"
+          /></a>
+        </div>
+
+        <!-- ====== -->
+        <!-- TAG 07 -->
+        <!-- ====== -->
+
+        <div class="cta__clickable__tags">
+          <a href=""
+            ><img
+              src="images/Clickable_tags/tag_tech_earphones_bw.webp"
+              alt="Clickable Tag for In-Ear Phones"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================================================== -->
+    <!-- TODO: RESELLERS (DUAL SIGNUP SECTION) - BECOME AS RESELLER OR GET OUR CATALOGUE -->
+    <!-- =============================================================================== -->
+
+    <div class="new__section__container">
+      <!-- RESELLER SIGN-UP - TITLE -->
+
+      <div id="resellers" class="reseller__section__title">
+        <h5><strong>resellers</strong></h5>
+        <!-- <h6>sub-title here</h6> -->
+      </div>
+
+      <!-- SIGNUP SECTION STARTS -->
+
+      <div class="resellers__signup__section">
+        <div class="resellers__signup__container">
+          <!-- ============================== -->
+          <!-- TODO: FORM 1 - RESELLER SIGNUP -->
+          <!-- ============================== -->
+          <div class="reseller__forms__container">
+            <div class="reseller__signup">
+              <form
+                action="https://formspree.io/f/xkgbyeoy"
+                class="reseller__signup__form"
+                name="RESELLER SIGNUP"
+                method="post"
+              >
+                <!-- ========================= -->
+                <!-- FORM 1 (RESELLER) - TITLE -->
+                <!-- ========================= -->
+
+                <h2 class="title">
+                  become a reseller<br />in your regional area
+                </h2>
+
+                <!-- ============================================== -->
+                <!-- FORM 1 (RESELLER) - POPI AND PRIVACY STATEMENT -->
+                <!-- ============================================= -->
+
+                <div class="reseller__popi__privacy__statement">
+                  <p>
+                    view our<a
+                      href="pdf/kettieklothing_popi_policy.pdf"
+                      target="_blank"
+                      ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
+                    >and<a
+                      href="pdf/kettieklothing_privacy_policy.pdf"
+                      target="_blank"
+                      ><strong>&nbsp;&nbsp;PRIVACY&nbsp;&nbsp;</strong></a
+                    >Policies.
+                  </p>
+                </div>
+
+                <!-- ================================================ -->
+                <!-- FORM 1 (RESELLER) - INPUT FIELD (NAME & SURNAME) -->
+                <!-- ================================================ -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-user"></i>
+                  <input
+                    id="reseller-name"
+                    type="text"
+                    placeholder="name & surname *"
+                    value=""
+                    name="Name & Surname of Reseller"
+                    minlength="3"
+                    maxlength="75"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <!-- ============================================== -->
+                <!-- FORM 1 (RESELLER) - INPUT FIELD (MOBILE PHONE) -->
+                <!-- ============================================== -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-mobile"></i>
+                  <input
+                    id="reseller-mobile"
+                    type="tel"
+                    value=""
+                    name="Mobile Number of Reseller"
+                    placeholder="mobile number *"
+                    minlength="3"
+                    maxlength="13"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <!-- ======================================= -->
+                <!-- FORM 1 (RESELLER) - INPUT FIELD (EMAIL) -->
+                <!-- ======================================= -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    id="reseller-email"
+                    type="email"
+                    value=""
+                    name="Email Address of Reseller"
+                    placeholder="email address *"
+                    minlength="3"
+                    maxlength="75"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <!-- ======================================== -->
+                <!-- FORM 1 (RESELLER) - INPUT FIELD (REGION) -->
+                <!-- ======================================== -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-map-marker"></i>
+                  <select
+                    id="reseller-region"
+                    name="Reseller Province & Regional Area"
+                    required
+                  >
+                    <option value="" selected>Select selling region *</option>
+
+                    <optgroup label="EASTERN CAPE">
+                      <option id="ec-amatola-region" value="Amatola Region">
+                        Amatola Region
+                      </option>
+                      <option id="ec-northern-region" value="Northern Region">
+                        Northern Region
+                      </option>
+                      <option id="ec-western-region" value="Western Region">
+                        Western Region
+                      </option>
+                      <option id="ec-wild-coast" value="Wild Coast">
+                        Wild Coast
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="FREE STATE">
+                      <option
+                        id="fs-eastern-free-state"
+                        value="Eastern Free State"
+                      >
+                        Eastern Free State
+                      </option>
+                      <option id="fs-goldfields" value="Goldfields">
+                        Goldfields
+                      </option>
+                      <option
+                        id="fs-northern-free-state"
+                        value="Northern Free State"
+                      >
+                        Northern Free State
+                      </option>
+                      <option id="fs-transgariep" value="Transgariep">
+                        Transgariep
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="GAUTENG">
+                      <option id="gauteng-central" value="Central Gauteng">
+                        Central Gauteng
+                      </option>
+                      <option id="gauteng-eastern" value="Eastern Gauteng">
+                        Eastern Gauteng
+                      </option>
+                      <option id="gauteng-northern" value="Northern Gauteng">
+                        Northern Gauteng
+                      </option>
+                      <option id="gauteng-southern" value="Southern Gauteng">
+                        Southern Gauteng
+                      </option>
+                      <option id="gauteng-western" value="Western Gauteng">
+                        Western Gauteng
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="KWAZULU-NATAL">
+                      <option id="kzn-battlefields" value="Battlefields">
+                        Battlefields
+                      </option>
+                      <option id="kzn-elephant-coast" value="Elephant Coast">
+                        Elephant Coast
+                      </option>
+                      <option
+                        id="kzn-durban-ethekwiniR25"
+                        value="Durban Ethekwini"
+                      >
+                        Durban (Ethekwini)
+                      </option>
+                      <option id="kzn-midlands" value="Midlands">
+                        Midlands
+                      </option>
+                      <option id="kzn-north-coast" value="North Coast">
+                        North Coast
+                      </option>
+                      <option id="kzn-south-coast" value="South Coast">
+                        South Coast
+                      </option>
+                      <option id="kzn-drakensberg" value="Drakensberg">
+                        Drakensberg (Ukhahlamba)
+                      </option>
+                      <option id="kzn-zululand" value="Zululand">
+                        Zululand
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="LIMPOPO">
+                      <option id="lp-capricorn" value="Capricorn">
+                        Capricorn
+                      </option>
+                      <option id="lp-olifants-region" value="Olifants Region">
+                        Olifants Region
+                      </option>
+                      <option id="lp-soutpansberg" value="Soutpansberg">
+                        Soutpansberg
+                      </option>
+                      <option id="lp-waterberg" value="Waterberg">
+                        Waterberg
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="MPUMALANGA">
+                      <option id="mp-escarpment" value="Escarpment">
+                        Escarpment (Nkangala)
+                      </option>
+                      <option id="mp-grass-wetlands" value="Grass and Wetlands">
+                        Grass and Wetlands
+                      </option>
+                      <option
+                        id="mp-highveld-cosmos"
+                        value="Highveld and Cosmos"
+                      >
+                        Highveld and Cosmos
+                      </option>
+                      <option
+                        id="mp-ehlanzeni-lowveld"
+                        value="Ehlanzeni Lowveld"
+                      >
+                        Ehlanzeni Lowveld
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="NORTH WEST">
+                      <option id="nw-bophirima" value="Bophirima">
+                        Bophirima
+                      </option>
+                      <option id="nw-central-region" value="Central Region">
+                        Central Region
+                      </option>
+                      <option id="nw-eastern-region" value="Eastern Region">
+                        Eastern Region
+                      </option>
+                      <option id="nw-southern-region" value="Southern Region">
+                        Southern Region
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="NORTHERN CAPE">
+                      <option id="nc-diamond-fields" value="Diamond Fields">
+                        Diamond Fields
+                      </option>
+                      <option id="nc-green-kalahari" value="Green Kalahari">
+                        Green Kalahari
+                      </option>
+                      <option id="nc-hantam-karoo" value="Hantam Karoo">
+                        Hantam Karoo
+                      </option>
+                      <option id="nc-kalahari" value="Kalahari">
+                        Kalahari
+                      </option>
+                      <option id="nc-namaqualand" value="Namaqualand">
+                        Namaqualand
+                      </option>
+                      <option id="nc-upper-karoo" value="Upper Karoo">
+                        Upper Karoo
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="WESTERN CAPE">
+                      <option id="wc-cape-peninsula" value="Cape Peninsula">
+                        Cape Peninsula
+                      </option>
+                      <option
+                        id="wc-breede-river-valley"
+                        value="Breede River Valley"
+                      >
+                        Breede River Valley
+                      </option>
+                      <option id="wc-cape-winelands" value="Cape Winelands">
+                        Cape Winelands
+                      </option>
+                      <option id="wc-central-karoo" value="Central Karoo">
+                        Central Karoo
+                      </option>
+                      <option id="wc-garden-route" value="Garden Route">
+                        Garden Route
+                      </option>
+                      <option id="wc-klein-karoo" value="Klein Karoo">
+                        Klein Karoo
+                      </option>
+                      <option id="wc-overberg" value="Overberg">
+                        Overberg
+                      </option>
+                      <option id="wc-west-coast" value="West Coast">
+                        West Coast
+                      </option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <!-- ===================================================================================== -->
+                <!-- FORM 1 (RESELLER) - T's & C's (ACCEPT PRIVACY / ACCEPT CATALOGUE & DISCOUNT VOUCHERS) -->
+                <!-- ===================================================================================== -->
+
+                <div class="form__group__double">
+                  <label class="checkbox__option"
+                    ><input type="checkbox" name="checkbox" required />I accept
+                    the company's POPI and PRIVACY policies to protect my
+                    personal information *</label
+                  >
+                  <label class="checkbox__option"
+                    ><input type="checkbox" name="checkbox" required />Add me to
+                    the mailing list to receive the product catalogue and
+                    monthly discount vouchers *</label
+                  >
+                </div>
+
+                <!-- ================================================================================================ -->
+                <!-- FORM 1 (RESELLER) - TODO: GOOGLE RECAPTCHA TODO: IMPLEMENTATION (VERSION 2 - "I AM NOT A ROBOT") -->
+                <!-- CURRENT SITE KEY FOR KETTIE KLOTHING (PTY) LTD                                                  -->
+                <!-- ================================================================================================ -->
+
+                <div class="form__group">
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LfHvXUrAAAAAK8zOIxml8jwPQvE-EFA_R52j_S_"
+                    data-theme="light"
+                  ></div>
+                </div>
+
+                <!-- ================================= -->
+                <!-- FORM 1 (RESELLER) - SIGNUP BUTTON -->
+                <!-- ================================= -->
+
+                <input type="submit" value="submit" class="btn solid" />
+              </form>
+
+              <!-- =============================== -->
+              <!-- TODO: FORM 2 - CATALOGUE SIGNUP -->
+              <!-- =============================== -->
+
+              <form
+                action="https://formspree.io/f/mblywbdn"
+                class="catalogue__signup__form"
+                name="CATALOGUE SIGNUP"
+                method="post"
+              >
+                <!-- ========================== -->
+                <!-- FORM 2 (CATALOGUE) - TITLE -->
+                <!-- ========================== -->
+
+                <h2 class="title">
+                  Sign up for our product<br />catalogue and discounts
+                </h2>
+
+                <!-- =============================================== -->
+                <!-- FORM 2 (CATALOGUE) - POPI AND PRIVACY STATEMENT -->
+                <!-- =============================================== -->
+
+                <div class="reseller__popi__privacy__statement">
+                  <p>
+                    view our<a
+                      href="pdf/kettieklothing_popi_policy.pdf"
+                      target="_blank"
+                      ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
+                    >and<a
+                      href="pdf/kettieklothing_privacy_policy.pdf"
+                      target="_blank"
+                      ><strong>&nbsp;&nbsp;PRIVACY&nbsp;&nbsp;</strong></a
+                    >Policies.
+                  </p>
+                </div>
+
+                <!-- ================================================= -->
+                <!-- FORM 2 (CATALOGUE) - INPUT FIELD (NAME & SURNAME) -->
+                <!-- ================================================= -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-user"></i>
+                  <input
+                    id="catalogue-name"
+                    type="text"
+                    placeholder="name & surname *"
+                    value=""
+                    name="Name & Surname of Reseller"
+                    minlength="3"
+                    maxlength="75"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <!-- =============================================== -->
+                <!-- FORM 2 (CATALOGUE) - INPUT FIELD (MOBILE PHONE) -->
+                <!-- =============================================== -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-mobile"></i>
+                  <input
+                    id="catalogue-mobile"
+                    type="tel"
+                    value=""
+                    name="Mobile Number of Reseller"
+                    placeholder="mobile number *"
+                    minlength="3"
+                    maxlength="13"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <!-- ======================================== -->
+                <!-- FORM 2 (CATALOGUE) - INPUT FIELD (EMAIL) -->
+                <!-- ======================================== -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    id="catalogue-email"
+                    type="email"
+                    value=""
+                    name="Email Address of Reseller"
+                    placeholder="email address *"
+                    minlength="3"
+                    maxlength="75"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <!-- ============================================= -->
+                <!-- FORM 2 (CATALOGUE) - INPUT FIELD (BIRTH DATE) -->
+                <!-- ============================================= -->
+
+                <div class="reseller__input__field">
+                  <i class="fas fa-birthday-cake"></i>
+                  <input
+                    id="catalogue-birthdate"
+                    type="date"
+                    value=""
+                    name="Date of Birth"
+                    placeholder="date of birth *"
+                    min="1900-01-01"
+                    max="2099-12-31"
+                    required
+                  />
+                </div>
+
+                <!-- ====================================================================================== -->
+                <!-- FORM 2 (CATALOGUE) - T's & C's (ACCEPT PRIVACY / ACCEPT CATALOGUE & DISCOUNT VOUCHERS) -->
+                <!-- ====================================================================================== -->
+
+                <div class="form__group__double">
+                  <label class="checkbox__option"
+                    ><input type="checkbox" name="checkbox" required />I accept
+                    the company's POPI and PRIVACY policies to protect my
+                    personal information *</label
+                  >
+                  <label class="checkbox__option"
+                    ><input type="checkbox" name="checkbox" required />Add me to
+                    the mailing list to receive the product catalogue and
+                    monthly discount vouchers *</label
+                  >
+                </div>
+
+                <!-- ================================================================================================= -->
+                <!-- FORM 2 (CATALOGUE) - TODO: GOOGLE RECAPTCHA TODO: IMPLEMENTATION (VERSION 2 - "I AM NOT A ROBOT") -->
+                <!-- CURRENT SITE KEY FOR KETTIE KLOTHING (PTY) LTD                                                    -->
+                <!-- ================================================================================================= -->
+
+                <div class="form__group">
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LfHvXUrAAAAAK8zOIxml8jwPQvE-EFA_R52j_S_"
+                    data-theme="light"
+                  ></div>
+                </div>
+
+                <!-- ================================== -->
+                <!-- FORM 2 (CATALOGUE) - SIGNUP BUTTON -->
+                <!-- ================================== -->
+
+                <input type="submit" value="submit" class="btn solid" />
+              </form>
             </div>
-            <img src="svg/signup_sagegreen.svg" alt="" class="image" />
           </div>
 
-          <!-- =========== -->
-          <!-- RIGHT PANEL -->
-          <!-- =========== -->
+          <!-- ====================================== -->
+          <!-- TODO: PANEL SECTIONS - IMAGES & THEMES -->
+          <!-- ====================================== -->
 
-          <div id="right-panel" class="panel right-panel">
-            <div class="content">
-              <h3>Interested in becoming a<br />kettie klothing reseller?</h3>
-              <p>
-                You can
-                <strong>sell our clothing, accessories, gear, and tech</strong>
-                from your home or small business in South Africa. Profit by
-                buying our products in bulk at highly discounted prices and
-                selling them at our suggested retail prices in your regional
-                area. Join our national reseller program and get a 10% discount
-                on your first bulk order.
-              </p>
-              <button class="btn transparent" id="sign-in-btn">sign up</button>
+          <div class="panels-container">
+            <!-- ========== -->
+            <!-- LEFT PANEL -->
+            <!-- ========== -->
+
+            <div id="left-panel" class="panel left-panel">
+              <div class="content">
+                <h3>Sign up for our product<br />catalogue and discounts</h3>
+                <p>
+                  Come <strong>find your true north</strong> and enjoy life and
+                  the outdoors with us by signing up for our product catalogues,
+                  monthly newsletters and discount vouchers. You never know,
+                  maybe we'll surprise you on your birthday. To sweeten the
+                  deal, we'll give you a 10% discount on your first order.
+                </p>
+                <button class="btn transparent" id="sign-up-btn">
+                  sign up
+                </button>
+              </div>
+              <img src="svg/signup_sagegreen.svg" alt="" class="image" />
             </div>
-            <img src="svg/reseller_sagegreen.svg" alt="" class="image" />
+
+            <!-- =========== -->
+            <!-- RIGHT PANEL -->
+            <!-- =========== -->
+
+            <div id="right-panel" class="panel right-panel">
+              <div class="content">
+                <h3>Interested in becoming a<br />kettie klothing reseller?</h3>
+                <p>
+                  You can
+                  <strong
+                    >sell our clothing, accessories, gear, and tech</strong
+                  >
+                  from your home or small business in South Africa. Profit by
+                  buying our products in bulk at highly discounted prices and
+                  selling them at our suggested retail prices in your regional
+                  area. Join our national reseller program and get a 10%
+                  discount on your first bulk order.
+                </p>
+                <button class="btn transparent" id="sign-in-btn">
+                  sign up
+                </button>
+              </div>
+              <img src="svg/reseller_sagegreen.svg" alt="" class="image" />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ======================= -->
-    <!-- FOOTER - CONTACT        -->
-    <!-- ======================= -->
+    <!-- ============================== -->
+    <!-- TODO: FOOTER SECTION - CONTACT -->
+    <!-- ============================== -->
 
-    <hr class="horizontal__row__height" />
+    <!-- <hr class="horizontal__row__height" /> -->
 
     <div class="footer__section__main__container">
       <footer id="contact">
@@ -1241,10 +1738,10 @@
                   <ul class="footer__column__group__header">
                     <li class="footer__column__group__name">sign-up</li>
                     <li class="footer__column__group__item">
-                      <a href="#right-panel">Product catalogue</a>
+                      <a href="#resellers">Product catalogue</a>
                     </li>
                     <li class="footer__column__group__item">
-                      <a href="#left-panel">Become a reseller</a>
+                      <a href="#resellers">Become a reseller</a>
                     </li>
                   </ul>
                 </div>

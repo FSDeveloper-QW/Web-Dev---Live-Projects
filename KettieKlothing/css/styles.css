@@ -174,6 +174,12 @@ h6 {
   }
 }
 
+/* =================================================================================================== */
+
+/* ========================================== */
+/* TODO: HEADER : NAVIGATION & SLIDER SECTION */
+/* ========================================== */
+
 /* ======================================== */
 /* STYLING - STICKY HEADER & NAVIGATION BAR */
 /* ======================================== */
@@ -194,7 +200,7 @@ header {
   justify-content: space-between;
   padding: 1.5rem 10rem;
   transition: 0.5s ease;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 header .logo-container {
@@ -599,63 +605,710 @@ section {
   }
 }
 
-/* ======================= */
-/* CATEGORY 01 - WOMEN     */
-/* ======================= */
+/* =================================================================================================== */
 
-/* ======================= */
-/* CATEGORY 02 - MEN       */
-/* ======================= */
+/* ======================================================= */
+/* TODO: CALL TO ACTION SECTIONS (CLICKABLE CATEGORY TAGS) */
+/* ======================================================= */
 
-/* ======================= */
-/* CATEGORY 03 - KIDS      */
-/* ======================= */
+/* ----------------------- */
+/* NEW SECTION - CONTAINER */
+/* ----------------------- */
 
-/* ======================= */
-/* CATEGORY 04 - COMBOS    */
-/* ======================= */
-
-/* ======================= */
-/* CATEGORY 05 - GIFTS     */
-/* ======================= */
-
-/* ======================= */
-/* CATEGORY 06 - GEAR      */
-/* ======================= */
-
-/* ======================= */
-/* CATEGORY 07 - TECH      */
-/* ======================= */
-
-/* ========================================================================= */
-/* RESELLERS - DUAL SIGNUP SECTION - BECOME AS RESELLER OR GET OUR CATALOGUE */
-/* ========================================================================= */
-
-.resellers__signup__section {
+.new__section__container {
   position: relative;
-  top: 10rem;
+  top: 0rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
+  /* background-color: #eee; */
+  /* border: 2px solid red; */
 }
 
-@media screen and (max-width: 830px) {
-  .resellers__signup__section {
+/* @media screen and (max-width: 830px) {
+  .new__section__container {
     position: relative;
     top: 11rem;
   }
-}
+} */
 
-@media screen and (max-width: 450px) {
-  .resellers__signup__section {
+/* @media screen and (max-width: 450px) {
+  .new__section__container {
     position: relative;
     top: 14.5rem;
   }
+} */
+
+/* ------------------- */
+/* NEW SECTION - TITLE */
+/* ------------------- */
+
+/* .new__section__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  background-color: #eee;
+  text-align: center;  
+} */
+
+/* ----------------------- */
+/* NEW SECTION - SUB-TITLE */
+/* ----------------------- */
+
+/* .new__section__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: #eee;
+  text-align: center;
+} */
+
+/* NEW SECTION - BUTTONS / DOWNLOADABLE BROCHURE / LINK TO NEW SECTION */
+
+/* MOBILE FIRST */
+
+/* .new__section__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;  
+} */
+
+/* .new__section__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: #dc143c;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+} */
+
+/* .new__section__button a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+} */
+
+/* .new__section__button:hover {
+  transform: scale(1.05);
+} */
+
+/* MEDIA QUERIES: LARGER SCREENS */
+
+/* @media screen and (min-width: 670px) {
+  .new__section__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+  }
+} */
+
+/* ============================================ */
+/* CATEGORY 01 - WOMEN (CALL TO ACTION SECTION) */
+/* ============================================ */
+
+/* ------------------------------------------------- */
+/* CALL TO ACTION SECTION - BACKGROUND COLOR SCHEMES */
+/* ------------------------------------------------- */
+
+:root {
+  --color-cta-section-background-01: #dad7cd;
+  --color-cta-section-background-02: #a3b18a;
+  --color-cta-section-background-03: #588157;
+  --color-cta-section-background-04: #3a5a40;
+  --color-cta-section-background-05: #344e41;
+  --color-cta-section-title-00: #ffffff;
+  --color-cta-section-title-01: #dad7cd;
+  --color-cta-section-title-02: #a3b18a;
+  --color-cta-section-title-03: #588157;
+  --color-cta-section-title-04: #3a5a40;
+  --color-cta-section-title-05: #344e41;
 }
+
+/* ------------------- */
+/* VIEW - MOBILE FIRST */
+/* ------------------- */
+
+/* CALL TO ACTION - TITLE 01 */
+
+.cta__section__title__01 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--color-cta-section-background-05);
+  /* border: 2px solid green; */
+}
+
+.cta__section__title__01 h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--color-cta-section-title-00);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  /* text-transform: uppercase; */
+  width: 100vw;
+  margin: 8rem 0.5rem 2rem 0.5rem;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+  text-align: center;
+}
+
+.cta__section__title__01 h6 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: none;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* .cta__section__title__01 p {
+  text-align: justify;
+  text-transform: initial;
+  margin: 0.5rem 3rem 1rem 3rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 500;
+} */
+
+/* .cta__section__title__01 p strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  cursor: pointer;
+} */
+
+/* .cta__section__title__01 p strong:hover {
+  color: var(--color-cta-shopmax);
+  transform: scale(1.05);
+} */
+
+/* CALL TO ACTION - CLICKABLE TAGS CONTAINER 01  */
+
+.cta__clickable__tags__container__01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 8rem 0rem;
+  background-color: var(--color-cta-section-background-05);
+}
+
+/* CALL TO ACTION - CLICKABLE TAGS */
+
+.cta__clickable__tags {
+  position: relative;
+  /* width: 26rem; */
+  width: 52rem;
+  /* height: 18.5rem; */
+  height: 37rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 2px solid yellow;   */
+}
+
+.cta__clickable__tags a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  /* background-color: red; */
+  /* color: red; */
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/* .cta__clickable__tags a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+} */
+
+/* .cta__clickable__tags a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+} */
+
+.cta__clickable__tags a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+}
+
+.cta__clickable__tags a:hover {
+  transform: scale(1.04);
+}
+
+/* ------------------------------ */
+/* MEDIA QUERIES - LARGER SCREENS */
+/* ------------------------------ */
+
+@media screen and (max-width: 800px) {
+  .cta__clickable__tags {
+    margin: 2rem 2.5rem 2rem 0.2rem;
+    width: 39rem;
+    height: 27.75rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .cta__clickable__tags {
+    margin: 2rem 2rem 2rem 0.2rem;
+    width: 32.5rem;
+    height: 23.125rem;
+  }
+
+  .cta__section__title__01 h5,
+  .cta__section__title__02 h5,
+  .cta__section__title__03 h5,
+  .cta__section__title__04 h5,
+  .cta__section__title__05 h5 {
+    margin: 8rem 1.5rem 1rem 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .cta__section__title__01 h6,
+  .cta__section__title__02 h6,
+  .cta__section__title__03 h6,
+  .cta__section__title__04 h6,
+  .cta__section__title__05 h6 {
+    margin: 0rem 1.5rem 2rem 1.5rem;
+    padding: 0rem 2rem 0rem 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cta__clickable__tags {
+    width: 26rem;
+    height: 18.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cta__clickable__tags {
+    width: 24rem;
+    height: 17.08rem;
+  }
+
+  .cta__section__title__01 h5,
+  .cta__section__title__02 h5,
+  .cta__section__title__03 h5,
+  .cta__section__title__04 h5,
+  .cta__section__title__05 h5 {
+    font-size: 1.8rem;
+  }
+
+  .cta__section__title__01 h6,
+  .cta__section__title__02 h6,
+  .cta__section__title__03 h6,
+  .cta__section__title__04 h6,
+  .cta__section__title__05 h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* @media screen and (max-width: 300px) {
+  .cta__section__title__01 h5 {
+    margin: 8rem 1.5rem 1rem 1.5rem;
+    text-align: center;
+  }
+
+  .cta__section__title__01 h6 {
+    margin: 0rem 1.5rem 2rem 1.5rem;
+    padding: 0rem 2rem 0rem 2rem;
+    text-align: justify;
+  }
+} */
+
+/* ========================================== */
+/* CATEGORY 02 - MEN (CALL TO ACTION SECTION) */
+/* ========================================== */
+
+/* CALL TO ACTION - TITLE 02 */
+
+.cta__section__title__02 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--color-cta-section-background-04);
+  /* border: 1px solid green; */
+}
+
+.cta__section__title__02 h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--color-cta-section-title-00);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  /* text-transform: uppercase; */
+  width: 100vw;
+  margin: 8rem 0.5rem 2rem 0.5rem;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+  text-align: center;
+}
+
+.cta__section__title__02 h6 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: none;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* CALL TO ACTION - CLICKABLE TAGS CONTAINER 02  */
+
+.cta__clickable__tags__container__02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 8rem 0rem;
+  background-color: var(--color-cta-section-background-04);
+}
+
+/* =========================================== */
+/* CATEGORY 03 - KIDS (CALL TO ACTION SECTION) */
+/* =========================================== */
+
+/* CALL TO ACTION - TITLE 03 */
+
+.cta__section__title__03 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--color-cta-section-background-03);
+  /* border: 1px solid green; */
+}
+
+.cta__section__title__03 h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--color-cta-section-title-00);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  /* text-transform: uppercase; */
+  width: 100vw;
+  margin: 8rem 0.5rem 2rem 0.5rem;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+  text-align: center;
+}
+
+.cta__section__title__03 h6 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: none;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* CALL TO ACTION - CLICKABLE TAGS CONTAINER 03  */
+
+.cta__clickable__tags__container__03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 8rem 0rem;
+  background-color: var(--color-cta-section-background-03);
+}
+
+/* =========================================== */
+/* CATEGORY 04 - GEAR (CALL TO ACTION SECTION) */
+/* =========================================== */
+
+/* CALL TO ACTION - TITLE 04 */
+
+.cta__section__title__04 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--color-cta-section-background-02);
+  /* border: 1px solid green; */
+}
+
+.cta__section__title__04 h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--color-cta-section-title-00);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  /* text-transform: uppercase; */
+  width: 100vw;
+  margin: 8rem 0.5rem 2rem 0.5rem;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+  text-align: center;
+}
+
+.cta__section__title__04 h6 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: none;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* CALL TO ACTION - CLICKABLE TAGS CONTAINER 04  */
+
+.cta__clickable__tags__container__04 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 8rem 0rem;
+  background-color: var(--color-cta-section-background-02);
+}
+
+/* =========================================== */
+/* CATEGORY 05 - TECH (CALL TO ACTION SECTION) */
+/* =========================================== */
+
+/* CALL TO ACTION - TITLE 05 */
+
+.cta__section__title__05 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--color-cta-section-background-01);
+  /* border: 1px solid green; */
+}
+
+.cta__section__title__05 h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--color-cta-section-title-00);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  /* text-transform: uppercase; */
+  width: 100vw;
+  margin: 8rem 0.5rem 2rem 0.5rem;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+  text-align: center;
+}
+
+.cta__section__title__05 h6 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: none;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* CALL TO ACTION - CLICKABLE TAGS CONTAINER 05  */
+
+.cta__clickable__tags__container__05 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 8rem 0rem;
+  background-color: var(--color-cta-section-background-01);
+}
+
+/* =================================================================================================== */
+
+/* =============================================================================== */
+/* TODO: RESELLERS (DUAL SIGNUP SECTION) - BECOME AS RESELLER OR GET OUR CATALOGUE */
+/* =============================================================================== */
+
+/* ------------------------------------------------- */
+/* CALL TO ACTION SECTION - BACKGROUND COLOR SCHEMES */
+/* ------------------------------------------------- */
+
+:root {
+  --color-reseller-title-section-background: #000000;
+  --color-reseller-title-section-title: #ffffff;
+}
+
+/* RESELLER SIGN-UP - TITLE */
+
+.reseller__section__title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--color-reseller-title-section-background);
+  /* border: 1px solid green; */
+}
+
+.reseller__section__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--color-reseller-title-section-title);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  /* text-transform: uppercase; */
+  width: 100%;
+  margin: 8rem 0.5rem 2rem 0.5rem;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+  text-align: center;
+}
+
+.reseller__section__title h6 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: none;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 460px) {
+  .reseller__section__title h5 {
+    margin: 8rem 0rem 1rem 0rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .reseller__section__title h6 {
+    margin: 0rem 1.5rem 2rem 1.5rem;
+    padding: 0rem 2rem 0rem 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .reseller__section__title h5 {
+    font-size: 1.8rem;
+  }
+
+  .reseller__section__title h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* RESELLER SIGN-UP - CONTAINER */
+
+.resellers__signup__section {
+  position: relative;
+  /* top: 10rem; */
+  top: -0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding-bottom: 8rem;
+  background: var(--color-reseller-title-section-background);
+}
+
+/* @media screen and (max-width: 830px) {
+  .resellers__signup__section {    
+    top: 0rem;
+  }
+} */
+
+/* @media screen and (max-width: 450px) {
+  .resellers__signup__section {    
+    top: 0rem;
+  }
+} */
 
 /* ------------------------------------------------------- */
 /* SIGNUP (PART 1) - MAIN CONTAINER (RESELLER / CATALOGUE) */
@@ -663,13 +1316,14 @@ section {
 
 .resellers__signup__container {
   position: relative;
-  margin: 2rem 0.25rem 2rem 0.25rem;
+  margin: 2rem 2rem 2rem 0.25rem;
   width: 95vw;
   height: 100vh;
   background-color: var(--color-resellers-background);
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow-04);
+  /* border: 5px solid blue; */
 }
 
 /* SET THE CONTAINER (BEFORE) - DOUBLE THE SIZE OF THE ORiGINAL CONTAINER */
@@ -1450,6 +2104,18 @@ section {
   }
 }
 
+/* @media (max-width: 460px) {
+  .resellers__signup__container {
+    margin: 2rem 0rem 2rem 0.25rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .resellers__signup__container {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+} */
+
 /* ------------------------------------ */
 /* LEFT AND RIGHT PANEL - MEDIA QUERIES */
 /* ------------------------------------ */
@@ -1689,9 +2355,11 @@ section {
   }
 }
 
-/* ======================= */
-/* FOOTER - CONTACT        */
-/* ======================= */
+/* =================================================================================================== */
+
+/* ============================== */
+/* TODO: FOOTER SECTION - CONTACT */
+/* ============================== */
 
 /* HORIZONTAL ROW */
 
@@ -1715,7 +2383,8 @@ hr {
 
 .footer__section__main__container {
   position: relative;
-  top: 10rem;
+  /* top: 10rem; */
+  top: -0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1723,6 +2392,7 @@ hr {
   width: 100%;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
+  /* border: 2px solid orange; */
 }
 
 /* MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF FOOTER MAIN CONTAINER  */
@@ -1730,21 +2400,21 @@ hr {
 @media screen and (max-width: 830px) {
   .footer__section__main__container {
     position: relative;
-    top: 11rem;
+    top: -0.2rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   .footer__section__main__container {
     position: relative;
-    top: 19.5rem;
+    top: -0.2rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .footer__section__main__container {
     position: relative;
-    top: 19.5rem;
+    top: -0.2rem;
   }
 }
 
@@ -1768,7 +2438,8 @@ footer {
 
 .footer__section__container {
   max-width: 124rem;
-  padding: 2rem 4rem 3rem 4rem;
+  /* padding: 9rem 4rem 5rem 4rem; */
+  padding: 9rem 4rem 5rem 4rem;
   margin: auto;
 }
 
@@ -2643,11 +3314,11 @@ li.footer__column__group__name {
   }
 }
 
-/* ================================================================================ */
+/* =================================================================================================== */
 
-/* =========================================== */
-/* ORDER FORM ELEMENTS - STYLING FOR ALL FORMS */
-/* =========================================== */
+/* ================================================= */
+/* TODO: ORDER FORM ELEMENTS - STYLING FOR ALL FORMS */
+/* ================================================= */
 
 /* ------------------- */
 /* MAIN FORM CONTAINER */
