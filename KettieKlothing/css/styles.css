@@ -31,9 +31,25 @@
   --color-YouTube: #ff0000;
   --color-WhatsApp: #25d366;
   --color-Telegram: #0088cc;
+  /* ------------------------------------------------- */
+  /* CALL TO ACTION SECTION - BACKGROUND COLOR SCHEMES */
+  /* ------------------------------------------------- */
+  --color-cta-section-background-01: #dad7cd;
+  --color-cta-section-background-02: #a3b18a;
+  --color-cta-section-background-03: #588157;
+  --color-cta-section-background-04: #3a5a40;
+  --color-cta-section-background-05: #344e41;
+  --color-cta-section-title-00: #ffffff;
+  --color-cta-section-title-01: #dad7cd;
+  --color-cta-section-title-02: #a3b18a;
+  --color-cta-section-title-03: #588157;
+  --color-cta-section-title-04: #3a5a40;
+  --color-cta-section-title-05: #344e41;
   /* ------------------------------------------------ */
   /* RESELLER / CATALOGUE SIGNUP SECTION COLOR SCHEME */
   /* ------------------------------------------------ */
+  --color-reseller-title-section-background: #000000;
+  --color-reseller-title-section-title: #ffffff;
   --color-resellers-background: #dad7cd;
   --color-resellers-background-gradient-1: #a3b18a;
   --color-resellers-background-gradient-2: #588157;
@@ -626,23 +642,7 @@ section {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  /* background-color: #eee; */
-  /* border: 2px solid red; */
 }
-
-/* @media screen and (max-width: 830px) {
-  .new__section__container {
-    position: relative;
-    top: 11rem;
-  }
-} */
-
-/* @media screen and (max-width: 450px) {
-  .new__section__container {
-    position: relative;
-    top: 14.5rem;
-  }
-} */
 
 /* ------------------- */
 /* NEW SECTION - TITLE */
@@ -732,24 +732,6 @@ section {
 /* CATEGORY 01 - WOMEN (CALL TO ACTION SECTION) */
 /* ============================================ */
 
-/* ------------------------------------------------- */
-/* CALL TO ACTION SECTION - BACKGROUND COLOR SCHEMES */
-/* ------------------------------------------------- */
-
-:root {
-  --color-cta-section-background-01: #dad7cd;
-  --color-cta-section-background-02: #a3b18a;
-  --color-cta-section-background-03: #588157;
-  --color-cta-section-background-04: #3a5a40;
-  --color-cta-section-background-05: #344e41;
-  --color-cta-section-title-00: #ffffff;
-  --color-cta-section-title-01: #dad7cd;
-  --color-cta-section-title-02: #a3b18a;
-  --color-cta-section-title-03: #588157;
-  --color-cta-section-title-04: #3a5a40;
-  --color-cta-section-title-05: #344e41;
-}
-
 /* ------------------- */
 /* VIEW - MOBILE FIRST */
 /* ------------------- */
@@ -763,7 +745,6 @@ section {
   flex-direction: column;
   width: 100vw;
   background-color: var(--color-cta-section-background-05);
-  /* border: 2px solid green; */
 }
 
 .cta__section__title__01 h5 {
@@ -774,7 +755,6 @@ section {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: 0.25rem;
-  /* text-transform: uppercase; */
   width: 100vw;
   margin: 8rem 0.5rem 2rem 0.5rem;
   padding: 1.5rem 2.5rem 0rem 2.5rem;
@@ -794,27 +774,6 @@ section {
   text-align: center;
 }
 
-/* .cta__section__title__01 p {
-  text-align: justify;
-  text-transform: initial;
-  margin: 0.5rem 3rem 1rem 3rem;
-  font-size: 1.4rem;
-  line-height: 1.8;
-  font-weight: 500;
-} */
-
-/* .cta__section__title__01 p strong {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.8;
-  cursor: pointer;
-} */
-
-/* .cta__section__title__01 p strong:hover {
-  color: var(--color-cta-shopmax);
-  transform: scale(1.05);
-} */
-
 /* CALL TO ACTION - CLICKABLE TAGS CONTAINER 01  */
 
 .cta__clickable__tags__container__01 {
@@ -832,9 +791,7 @@ section {
 
 .cta__clickable__tags {
   position: relative;
-  /* width: 26rem; */
   width: 52rem;
-  /* height: 18.5rem; */
   height: 37rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
@@ -842,7 +799,6 @@ section {
   border: none;
   outline: none;
   box-shadow: var(--color-box-shadow-01);
-  /* border: 2px solid yellow;   */
 }
 
 .cta__clickable__tags a {
@@ -857,23 +813,10 @@ section {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  /* background-color: red; */
-  /* color: red; */
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
 }
-
-/* .cta__clickable__tags a p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-} */
-
-/* .cta__clickable__tags a p strong {
-  font-size: 2rem;
-  font-weight: 600;
-} */
 
 .cta__clickable__tags a img {
   position: absolute;
@@ -960,19 +903,6 @@ section {
   }
 }
 
-/* @media screen and (max-width: 300px) {
-  .cta__section__title__01 h5 {
-    margin: 8rem 1.5rem 1rem 1.5rem;
-    text-align: center;
-  }
-
-  .cta__section__title__01 h6 {
-    margin: 0rem 1.5rem 2rem 1.5rem;
-    padding: 0rem 2rem 0rem 2rem;
-    text-align: justify;
-  }
-} */
-
 /* ========================================== */
 /* CATEGORY 02 - MEN (CALL TO ACTION SECTION) */
 /* ========================================== */
@@ -986,7 +916,6 @@ section {
   flex-direction: column;
   width: 100vw;
   background-color: var(--color-cta-section-background-04);
-  /* border: 1px solid green; */
 }
 
 .cta__section__title__02 h5 {
@@ -997,7 +926,6 @@ section {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: 0.25rem;
-  /* text-transform: uppercase; */
   width: 100vw;
   margin: 8rem 0.5rem 2rem 0.5rem;
   padding: 1.5rem 2.5rem 0rem 2.5rem;
@@ -1043,7 +971,6 @@ section {
   flex-direction: column;
   width: 100vw;
   background-color: var(--color-cta-section-background-03);
-  /* border: 1px solid green; */
 }
 
 .cta__section__title__03 h5 {
@@ -1054,7 +981,6 @@ section {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: 0.25rem;
-  /* text-transform: uppercase; */
   width: 100vw;
   margin: 8rem 0.5rem 2rem 0.5rem;
   padding: 1.5rem 2.5rem 0rem 2.5rem;
@@ -1100,7 +1026,6 @@ section {
   flex-direction: column;
   width: 100vw;
   background-color: var(--color-cta-section-background-02);
-  /* border: 1px solid green; */
 }
 
 .cta__section__title__04 h5 {
@@ -1111,7 +1036,6 @@ section {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: 0.25rem;
-  /* text-transform: uppercase; */
   width: 100vw;
   margin: 8rem 0.5rem 2rem 0.5rem;
   padding: 1.5rem 2.5rem 0rem 2.5rem;
@@ -1157,7 +1081,6 @@ section {
   flex-direction: column;
   width: 100vw;
   background-color: var(--color-cta-section-background-01);
-  /* border: 1px solid green; */
 }
 
 .cta__section__title__05 h5 {
@@ -1168,7 +1091,6 @@ section {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: 0.25rem;
-  /* text-transform: uppercase; */
   width: 100vw;
   margin: 8rem 0.5rem 2rem 0.5rem;
   padding: 1.5rem 2.5rem 0rem 2.5rem;
@@ -1207,15 +1129,6 @@ section {
 /* TODO: RESELLERS (DUAL SIGNUP SECTION) - BECOME AS RESELLER OR GET OUR CATALOGUE */
 /* =============================================================================== */
 
-/* ------------------------------------------------- */
-/* CALL TO ACTION SECTION - BACKGROUND COLOR SCHEMES */
-/* ------------------------------------------------- */
-
-:root {
-  --color-reseller-title-section-background: #000000;
-  --color-reseller-title-section-title: #ffffff;
-}
-
 /* RESELLER SIGN-UP - TITLE */
 
 .reseller__section__title {
@@ -1225,7 +1138,6 @@ section {
   flex-direction: column;
   width: 100%;
   background-color: var(--color-reseller-title-section-background);
-  /* border: 1px solid green; */
 }
 
 .reseller__section__title h5 {
@@ -1236,7 +1148,6 @@ section {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: 0.25rem;
-  /* text-transform: uppercase; */
   width: 100%;
   margin: 8rem 0.5rem 2rem 0.5rem;
   padding: 1.5rem 2.5rem 0rem 2.5rem;
@@ -1285,7 +1196,6 @@ section {
 
 .resellers__signup__section {
   position: relative;
-  /* top: 10rem; */
   top: -0.1rem;
   display: flex;
   justify-content: center;
@@ -1297,18 +1207,6 @@ section {
   padding-bottom: 8rem;
   background: var(--color-reseller-title-section-background);
 }
-
-/* @media screen and (max-width: 830px) {
-  .resellers__signup__section {    
-    top: 0rem;
-  }
-} */
-
-/* @media screen and (max-width: 450px) {
-  .resellers__signup__section {    
-    top: 0rem;
-  }
-} */
 
 /* ------------------------------------------------------- */
 /* SIGNUP (PART 1) - MAIN CONTAINER (RESELLER / CATALOGUE) */
@@ -1323,7 +1221,6 @@ section {
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow-04);
-  /* border: 5px solid blue; */
 }
 
 /* SET THE CONTAINER (BEFORE) - DOUBLE THE SIZE OF THE ORiGINAL CONTAINER */
@@ -1541,10 +1438,6 @@ section {
   width: 100%;
   border-radius: 1rem;
 }
-
-/* .resellers__signup__container label .label__strong {
-  color: purple;
-} */
 
 /* --------------------- */
 /* CHECKBOX - INPUT TYPE */
@@ -2104,18 +1997,6 @@ section {
   }
 }
 
-/* @media (max-width: 460px) {
-  .resellers__signup__container {
-    margin: 2rem 0rem 2rem 0.25rem;
-  }
-}
-
-@media (max-width: 390px) {
-  .resellers__signup__container {
-    margin: 0rem 0.5rem 0rem 0.5rem;
-  }
-} */
-
 /* ------------------------------------ */
 /* LEFT AND RIGHT PANEL - MEDIA QUERIES */
 /* ------------------------------------ */
@@ -2383,7 +2264,6 @@ hr {
 
 .footer__section__main__container {
   position: relative;
-  /* top: 10rem; */
   top: -0.2rem;
   display: flex;
   flex-direction: column;
@@ -2392,7 +2272,6 @@ hr {
   width: 100%;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  /* border: 2px solid orange; */
 }
 
 /* MEDIA QUERIES - STYLING FOR RESPONSIVENESS OF FOOTER MAIN CONTAINER  */
@@ -2438,7 +2317,6 @@ footer {
 
 .footer__section__container {
   max-width: 124rem;
-  /* padding: 9rem 4rem 5rem 4rem; */
   padding: 9rem 4rem 5rem 4rem;
   margin: auto;
 }
